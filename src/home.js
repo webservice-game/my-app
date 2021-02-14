@@ -32,7 +32,7 @@ function Home(){
       
       }
     return(
-        <div className="home">
+        <div className="home" style={{height: "990px", paddingBottom: "100px"}}>
             <div style={{transform:'translatey(300px)'}}>
                 <h1>The Ultimate Destination</h1>
                 <h1>For Gamers Match Making</h1>
@@ -53,7 +53,6 @@ function Home(){
                 <source src ={powerslap} type="video/mp4" />
             </video>
         </div>
-
     )
 }
 export default Home;
