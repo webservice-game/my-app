@@ -18,10 +18,10 @@ function About(){
                 <Col className="section-title"><h2>MISSION</h2></Col>
             </Row>
             <Row className="body-row">
-                <Col className="section-content"><p>...Mission Content...</p></Col>
+                <Col className="section-content"><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p></Col>
             </Row>
             <Row className="body-row">
-                <Col className="section-title"><h2>Our Story</h2></Col>
+                <Col className="section-title"><h2>OUR STORY</h2></Col>
             </Row>
             <Row className="body-row">
                 <Col className="section-content"><p>...Our Story Content...</p></Col>
@@ -30,48 +30,40 @@ function About(){
                 <Col className="section-title"><h2>MEET THE TEAM MEMBERS</h2></Col>
             </Row>
             <Row className="body-row">
-                <Col lg={2}></Col>
-                <Col lg={3}><div><Image src={placeholderImageCN} width="300" height="300" roundedCircle /></div></Col>
-                <Col lg={5} className="member-info">
+                <Col ><div><Image src={placeholderImageCN} className="member-img" /></div></Col>
+                <Col className="member-info">
                     <h3><strong>Christy Neal</strong></h3>
-                    <h3>Team Leader</h3>
+                    <h5>Team Leader</h5>
                     <p></p>
                 </Col>
-                <Col lg={2} sm={1}></Col>
             </Row>
             <Row className="body-row">
-                <Col lg={2}></Col>
-                <Col lg={3}><div><Image src={placeholderImageGM} width="300" height="300" roundedCircle /></div></Col>
-                <Col lg={5} className="member-info">
-                    <h2><strong>Gopi Macha</strong></h2>
-                    <h3>Team Member</h3>
+                <Col><div><Image src={placeholderImageGM} className="member-img" /></div></Col>
+                <Col className="member-info">
+                    <h3><strong>Gopi Macha</strong></h3>
+                    <h5>Team Member</h5>
                     <p></p>
                 </Col>
-                <Col lg={2} sm={1}></Col>
             </Row>
             <Row className="body-row">
-                <Col lg={2}></Col>
-                <Col lg={3}><div><Image src={placeholderImageLE} width="300" height="300" roundedCircle /></div></Col>
-                <Col lg={5} className="member-info">
-                    <h2><strong>Leul Endashaw</strong></h2>
-                    <h3>Team Member</h3>
+                <Col><div><Image src={placeholderImageLE} className="member-img" /></div></Col>
+                <Col className="member-info">
+                    <h3><strong>Leul Endashaw</strong></h3>
+                    <h5>Team Member</h5>
                     <p></p>
                 </Col>
-                <Col lg={2} sm={1}></Col>
             </Row>
             <Row className="body-row">
-                <Col lg={2} xs={3}></Col>
-                <Col lg={3} xs={6}><div><Image src={placeholderImagePN} width="300" height="300" roundedCircle /></div></Col>
-                <Col lg={5} xs={6} className="member-info">
-                    <h2><strong>Phuong Nguyen</strong></h2>
-                    <h3>Team Member</h3>
+                <Col><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
+                <Col className="member-info">
+                    <h3><strong>Phuong Nguyen</strong></h3>
+                    <h5>Team Member</h5>
                     <p>Phuong is currently a graduate student at Kennesaw State University. His bachelor degree is in 
                         Civil Engineering. He is always facinated about how computer technology works and developped. 
                         That is why he have chosen Software Engineering for his advance degree. Completing this web app 
                         in a timely manner will help him gain more experiences in web application development and increase 
                         chances for job seeking in the future.</p>
                 </Col>
-                <Col lg={2} xs={3}></Col>
             </Row>
         </Container>
     )
