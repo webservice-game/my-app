@@ -7,7 +7,7 @@ function Footer(){
         <Container fluid 
         style={{
                     position: "relative",
-                    marginTop: "-100px",
+                    marginTop: "50px",
                     clear: "both",
                     backgroundColor: "#353a3d",
                     color: "white"

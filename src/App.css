@@ -98,3 +98,53 @@
   color: #323232;
 }
 
+/*Common Style Sheet*/
+.page-title {
+  display: flex;
+  height: 200px;
+  background-image: linear-gradient(to bottom right, #9c1233, #240b36 75.63%);
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.page-title h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.body-row {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 20px;
+  color: #5B6575;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.section-content p {
+  font-size: 18px;
+}
+
+.member-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+.member-info h2 {
+  margin-top: 10px;
+}
+
+.member-info h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.member-info p {
+  font-size: 20px;
+}

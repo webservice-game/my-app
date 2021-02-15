@@ -1,93 +1,77 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LogoTitle from './LogoTitle.js';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import placeholderImagePN from "./Images/PhuongNguyen.jpg";
+import placeholderImageCN from "./Images/CN.jpg";
+import placeholderImageGM from "./Images/GM.jpg";
+import placeholderImageLE from "./Images/LE.png";
+import placeholderImagePN from "./Images/PN.jpg";
 
 function About(){
     return(
-        <Container fluid>
+        <Container fluid class="con">
+            <LogoTitle />
             <Row>
-                <Col lg={6} 
-                    style={{
-                                backgroundColor: "#ff9e16",
-                                paddingTop: "20px",
-                                paddingBottom: "114px",
-                                color: "white"
-                            }}>
-                    <h1>BACKGROUND</h1>
-                    <h2>Online gaming is an enormous industry that grows each year. 
-                        As the audience for online multiplayer games has gotten bigger, 
-                        the technology to meaningfully match these players has lagged behind. 
-                        Often times players, especially in competitive settings, are matched 
-                        using game metrics and statistics in order to have players of a similar 
-                        skill caliber play together. As this has become commonplace, players find 
-                        themselves matched with people who appear only as a username. With a lack 
-                        of personal connection, some players engage in negative communication which 
-                        results in a lower quality gaming experience for all.</h2>
+                <Col className="page-title"><h1>About Us</h1></Col>
+            </Row>
+            <Row className="body-row">
+                <Col className="section-title"><h2>MISSION</h2></Col>
+            </Row>
+            <Row className="body-row">
+                <Col className="section-content"><p>...Mission Content...</p></Col>
+            </Row>
+            <Row className="body-row">
+                <Col className="section-title"><h2>Our Story</h2></Col>
+            </Row>
+            <Row className="body-row">
+                <Col className="section-content"><p>...Our Story Content...</p></Col>
+            </Row>
+            <Row className="body-row">
+                <Col className="section-title"><h2>MEET THE TEAM MEMBERS</h2></Col>
+            </Row>
+            <Row className="body-row">
+                <Col lg={2}></Col>
+                <Col lg={3}><div><Image src={placeholderImageCN} width="300" height="300" roundedCircle /></div></Col>
+                <Col lg={5} className="member-info">
+                    <h3><strong>Christy Neal</strong></h3>
+                    <h3>Team Leader</h3>
+                    <p></p>
                 </Col>
-                <Col lg={6} 
-                    style={{
-                                backgroundColor: "#78c4e4",
-                                paddingTop: "20px",
-                                paddingBottom: "50px",
-                                color: "white"
-                            }}>
-                    <h1>OUR MISSIONS</h1>
-                    <h2>This web application aims to resolve existing matchmaking issues by matching 
-                        players on criteria beyond simply skill. It collects more 
-                        information about a player, including parameters related to play-style, preferences 
-                        and attitude. Thus, it will reintroduce a human component to online teammates and 
-                        help to brighten a gamer’s horizon with improved gaming experiences. Taking data 
-                        from in-game sources and crossing it with player and user generated behavior profiles, 
-                        your prospect system should match players with teammates that suit both their skill 
-                        and behavior. In addition, it enables users to find players from other 
-                        games, add them as friends, and form groups; all with like-minded players that they find in matchmaking.</h2>
+                <Col lg={2} sm={1}></Col>
+            </Row>
+            <Row className="body-row">
+                <Col lg={2}></Col>
+                <Col lg={3}><div><Image src={placeholderImageGM} width="300" height="300" roundedCircle /></div></Col>
+                <Col lg={5} className="member-info">
+                    <h2><strong>Gopi Macha</strong></h2>
+                    <h3>Team Member</h3>
+                    <p></p>
                 </Col>
+                <Col lg={2} sm={1}></Col>
             </Row>
-            <Row 
-                style={{
-                            backgroundColor: "#4e5a63",
-                            paddingTop: "20px",
-                            paddingBottom: "50px",
-                            color: "white"
-                        }}>
+            <Row className="body-row">
                 <Col lg={2}></Col>
-                <Col lg={8}>
-                    <h1>OUR TEAMS</h1>
-                    <h2>This web application is developed by team #2. The team is comprised of graduate students majoring in 
-                        Software Engineering at Kennesaw State University, Georgia.</h2>
+                <Col lg={3}><div><Image src={placeholderImageLE} width="300" height="300" roundedCircle /></div></Col>
+                <Col lg={5} className="member-info">
+                    <h2><strong>Leul Endashaw</strong></h2>
+                    <h3>Team Member</h3>
+                    <p></p>
                 </Col>
-                <Col lg={2}></Col>
+                <Col lg={2} sm={1}></Col>
             </Row>
-            <Row>
-                <Col><h1>TEAM MEMBERS</h1></Col>
-            </Row>
-            <Row>
-                <Col lg={2}></Col>
-                <Col lg={4}><div><Image /></div></Col>
-                <Col lg={4}><h2>Christy Neal</h2></Col>
-                <Col lg={2}></Col>
-            </Row>
-            <Row>
-                <Col lg={2}></Col>
-                <Col lg={4}><div><Image /></div></Col>
-                <Col lg={4}><h2>Gopi Macha</h2></Col>
-                <Col lg={2}></Col>
-            </Row>
-            <Row>
-                <Col lg={2}></Col>
-                <Col lg={4}><div><Image /></div></Col>
-                <Col lg={4}><h2>Leul Endashaw</h2></Col>
-                <Col lg={2}></Col>
-            </Row>
-            <Row style={{display: "flex", marginBottom: "100px"}}>
-                <Col lg={2}></Col>
-                <Col lg={4} style={{borderTop: "10px solid black"}}><div><Image src={placeholderImagePN} width="200" height="200" roundedCircle /></div></Col>
-                <Col lg={4} style={{borderTop: "10px solid black", paddingTop: "50px"}}>
+            <Row className="body-row">
+                <Col lg={2} xs={3}></Col>
+                <Col lg={3} xs={6}><div><Image src={placeholderImagePN} width="300" height="300" roundedCircle /></div></Col>
+                <Col lg={5} xs={6} className="member-info">
                     <h2><strong>Phuong Nguyen</strong></h2>
-                    <h3><strong>Skills:</strong> Java, React, JavaScript, HTML/CSS</h3>
+                    <h3>Team Member</h3>
+                    <p>Phuong is currently a graduate student at Kennesaw State University. His bachelor degree is in 
+                        Civil Engineering. He is always facinated about how computer technology works and developped. 
+                        That is why he have chosen Software Engineering for his advance degree. Completing this web app 
+                        in a timely manner will help him gain more experiences in web application development and increase 
+                        chances for job seeking in the future.</p>
                 </Col>
-                <Col lg={2}></Col>
+                <Col lg={2} xs={3}></Col>
             </Row>
         </Container>
     )
