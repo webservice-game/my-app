@@ -1,41 +1,29 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import placeholderImageFB from "./Images/fb.png";
+import placeholderImageIS from "./Images/insta.png";
+import placeholderImageLI from "./Images/linkedIn.png";
+import placeholderImageTW from "./Images/twitter2.png";
 
 function Footer(){
     return(
-        <Container fluid 
-        style={{
-                    position: "relative",
-                    marginTop: "50px",
-                    clear: "both",
-                    backgroundColor: "#353a3d",
-                    color: "white"
-                }}>
-            <Row style={{textAlign: "left"}}>
-                <Col lg={2}></Col>
-                <Col lg={4}>
-                    <h1 style={{color: "#959b9e"}}>GAME MATCHMAKING</h1>
-                    <h5><strong>Where your new gaming buddy can be found</strong></h5>
-                </Col>
-                <Col lg={1} style={{textAlign: "center"}}>
-                    <h3 style={{color: "#959b9e"}}><strong>MENU</strong></h3>
-                    <h4><a href="/" style={{color: "white"}}>Home</a></h4>
-                    <h4><a href="/About" style={{color: "white"}}>About</a></h4>
-                </Col>
-                <Col lg={3}>
-                    <h3 style={{color: "#959b9e"}}><strong>CONTACT EMAIL</strong></h3>
-                    <h4>Christy Neal - cneal21@students.kennesaw.edu</h4>
-                    <h4>Gopi Macha - gmacha@students.kennesaw.edu</h4>
-                    <h4>Leul Endashaw - lendasha@students.kennesaw.edu</h4>
-                    <h4>Phuong Nguyen - pnguye71@students.kennesaw.edu</h4>
-                </Col>
-                <Col lg={2}></Col>
+        <Container fluid className="footer-con">
+            <Row className="footer-header">
+                <Col><h3 className="footer-title">What ever the name is</h3></Col>
             </Row>
-            <Row>
-                <Col lg={2}></Col>
-                <Col lg={8}><h6>@Game Matchmaking 2021. All rights reserved.</h6></Col>
-                <Col lg={2}></Col>
+            <Row className="footer-navigation">
+                <Col className="footer-navigation-col"><h5><a href="/about" className="anchor">About Us</a></h5></Col>
+                <Col className="footer-navigation-col"><h5><a href="/how-it-works" className="anchor">How it works</a></h5></Col>
+            </Row>
+            <Row><div className="footer-line"></div></Row>
+            <Row className="social-media">
+                <Col><a><Image src={placeholderImageIS} className="media-img" /></a></Col>
+                <Col><a><Image src={placeholderImageFB} className="media-img" /></a></Col>
+                <Col><a><Image src={placeholderImageLI} className="media-img"/></a></Col>
+                <Col><a><Image src={placeholderImageTW} className="media-img" /></a></Col>
+            </Row>
+            <Row className="copyright">
+                <Col>@2021 Web Services Team#2</Col>
             </Row>
         </Container>
     )
