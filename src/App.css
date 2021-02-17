@@ -98,7 +98,15 @@
   color: #323232;
 }
 
-/*Common Style Sheet*/
+/*************Common Style Sheet**************/
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .page-title {
   display: flex;
   height: 200px;
@@ -113,11 +121,23 @@
   font-size: 40px;
 }
 
+.body-row, .section-title, .section-content{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .body-row{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-title, .section-content{
+  word-wrap: break-word;      
+  width: 100%;
+  font-family: "Source Sans Pro";
 }
 
 .section-title h2 {
@@ -138,9 +158,9 @@
 
 .member-info {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  text-align: left;
+  justify-content: center;
+  font-family: "Source Sans Pro";
 }
 
 .member-info h3 {
@@ -150,107 +170,50 @@
 .member-info h5 {
   color: grey;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .member-info p {
   font-size: 14px;
 }
 
-/*Responsive with multiple devices*/
-@media screen and (min-width: 1024px) {
-  .section-title, .section-content{
-    word-wrap: break-word;
-    width: 50%;
+/***********Responsive with multiple devices**************/
+@media only screen and (min-width: 768px) {
+  .body-row, .section-title, .section-content{
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  .member-info{
-    width: 40%;
-    margin-left: 30px;
+  .section-title h2{
+    font-size: 22px;
   }
-}
-
-@media screen and (max-width: 1024px) {
-  .section-title, .section-content{  
-    word-wrap: break-word;
-    width: 50%;
-  }
-  .member-info{
-    width: 40%;
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .section-title, .section-content{
-    word-wrap: break-word;
-    width: 50%;
-  }
-  .member-info{
-    width: 40%;
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 600px) {.
-  html, body{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-  }
-
-  .section-title, .section-content{
-    word-wrap: break-word;      
-    width: 100%;
-  }
-
-  .page-title{
-    height: 150px;
-  }
-
-  .page-title h1{
-    font-size: 30px;
-  }
-
-  .body-row{
-    margin: 35px 25px 35px 25px;
-  }
-  
-  .section-title{
-    font-size: 18px;
-  }
-
   .section-content p{
-    font-size: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
+    font-size: 20px;
   }
-
-  .member-img{
-    height: 200px;
-    width: 200px;
-  }
-
-  .body-row{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .member-info {
-    text-align: center;
-    width: 100%;
-  }
-
   .member-info h3{
+    font-size: 24px;
+  }
+  .member-info h5{
     font-size: 18px;
   }
-
-  .member-info h5{
-    font-size: 15px;
-  }
-
   .member-info p{
-    font-size: 14px;
+    font-size: 16px;
   }
 }
+
+@media only screen and (min-width: 992px) {
+  .body-row, .section-title, .section-content{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .body-row-member{
+    flex-direction: row;
+  }
+  .member-info{
+    padding-left: 30px;
+    text-align: left;
+  }
+  .body-row-member{
+    margin-bottom: 60px;
+  }
+}
+

@@ -29,15 +29,15 @@ function About(){
             <Row className="body-row">
                 <Col className="section-title"><h2>MEET THE TEAM MEMBERS</h2></Col>
             </Row>
-            <Row className="body-row">
-                <Col ><div><Image src={placeholderImageCN} className="member-img" /></div></Col>
+            <Row className="body-row body-row-member">
+                <Col><div><Image src={placeholderImageCN} className="member-img" /></div></Col>
                 <Col className="member-info">
                     <h3><strong>Christy Neal</strong></h3>
                     <h5>Team Leader</h5>
                     <p></p>
                 </Col>
             </Row>
-            <Row className="body-row">
+            <Row className="body-row body-row-member">
                 <Col><div><Image src={placeholderImageGM} className="member-img" /></div></Col>
                 <Col className="member-info">
                     <h3><strong>Gopi Macha</strong></h3>
@@ -45,7 +45,7 @@ function About(){
                     <p></p>
                 </Col>
             </Row>
-            <Row className="body-row">
+            <Row className="body-row body-row-member">
                 <Col><div><Image src={placeholderImageLE} className="member-img" /></div></Col>
                 <Col className="member-info">
                     <h3><strong>Leul Endashaw</strong></h3>
@@ -53,8 +53,8 @@ function About(){
                     <p></p>
                 </Col>
             </Row>
-            <Row className="body-row">
-                <Col><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
+            <Row className="body-row body-row-member">
+                <Col ><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
                 <Col className="member-info">
                     <h3><strong>Phuong Nguyen</strong></h3>
                     <h5>Team Member</h5>
