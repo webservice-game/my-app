@@ -129,6 +129,7 @@
 
 .anchor:hover{
   color: white;
+  text-decoration: none;
 }
 /*************************************/
 
@@ -259,6 +260,10 @@ html, body{
   .footer-navigation-col{
     padding: 0px 10px 0px 10px;
     margin-bottom: 10px;
+  }
+
+  .separation::after{
+    content: "\00a0\00a0\00a0\00a0\00a0|";
   }
 }
 
