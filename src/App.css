@@ -98,7 +98,14 @@
   color: #323232;
 }
 
-/*************Footer******************/
+/*****************Logo Title - Start********************/
+.logo-title{
+  width: 200px;
+  height: 100px;
+}
+/***************Logo Title -End*******************/
+
+/*************Footer - Start******************/
 .footer-con{
   background-color: #3e0f22;
   color: #b29fa7;
@@ -131,7 +138,8 @@
   color: white;
   text-decoration: none;
 }
-/*************************************/
+
+/*************Footer - End******************/
 
 /*************Common Style Sheet**************/
 html, body{
@@ -211,6 +219,13 @@ html, body{
 .member-info p {
   font-size: 14px;
 }
+/*******Footer********/
+.logo-image{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50px;
+  height: 50px;
+}
 
 /***********Responsive with multiple devices**************/
 @media only screen and (min-width: 768px) {
@@ -252,11 +267,17 @@ html, body{
   }
 
   /******Footer******/
+  .logo-image{
+    padding-top: ;
+    padding-bottom: ;
+  }
+  
   .footer-navigation{
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
   .footer-navigation-col{
     padding: 0px 10px 0px 10px;
     margin-bottom: 10px;

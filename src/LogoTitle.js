@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Image, Row, Col } from 'react-bootstrap';
+import placeholderImageLogo from "./Images/G.png";
 
 function LogoTitle(){
     return(
         <Row>
-            <Col><h2 style={{fontWeight: "bold", margin: "0", padding: "0"}}>Whatever the name is</h2></Col>
+            <Col><Image src={placeholderImageLogo} className="logo-title" /></Col>
         </Row>
     )
 }
