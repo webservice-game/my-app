@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './home'
 import About from './about';
+import HowItWorks from './howItWorks.js';
 import Started from './getstarted.js';
 import Footer from './Footer.js';
 
@@ -23,6 +24,9 @@ function App() {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+              <Link to="/how-it-works">How It Works</Link>
+            </li>
             {/* <li>
               <Link to="/start">Started</Link>
             </li> */}
@@ -35,6 +39,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/how-it-works">
+              <HowItWorks />
             </Route>
             <Route path="/start">
               <Started />
