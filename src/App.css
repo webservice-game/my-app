@@ -107,8 +107,15 @@
 
 /*************Footer - Start******************/
 .footer-con{
-  background-color: #3e0f22;
+  background-color: #532323;
   color: #b29fa7;
+}
+
+.logo-image{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 150px;
+  height: 90px;
 }
 
 .media-img{
@@ -153,7 +160,7 @@ html, body{
 .page-title {
   display: flex;
   height: 200px;
-  background-image: linear-gradient(to bottom right, #9c1233, #240b36 75.63%);
+  background-image: linear-gradient(to bottom right, #77838d, #3f0a17 75.63%);
   align-items: center;
   justify-content: center;
   color: white;
@@ -220,12 +227,6 @@ html, body{
   font-size: 14px;
 }
 /*******Footer********/
-.logo-image{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 50px;
-  height: 50px;
-}
 
 /***********Responsive with multiple devices**************/
 @media only screen and (min-width: 768px) {

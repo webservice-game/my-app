@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LogoTitle from './LogoTitle.js';
+import Footer from './Footer.js';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import placeholderImageCN from "./Images/CN.jpg";
 import placeholderImageGM from "./Images/GM.jpg";
@@ -65,7 +66,9 @@ function About(){
                         chances for job seeking in the future.</p>
                 </Col>
             </Row>
+            <Footer />
         </Container>
+        
     )
 }
 export default About;

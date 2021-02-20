@@ -10,7 +10,6 @@ import Home from './home'
 import About from './about';
 import HowItWorks from './howItWorks.js';
 import Started from './getstarted.js';
-import Footer from './Footer.js';
 
 function App() {
   return (
@@ -49,7 +48,6 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <Footer />
     </div>
   );
 }

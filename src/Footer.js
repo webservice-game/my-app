@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import placeholderImageLogo from "./Images/G.MatchLogo.png";
+import placeholderImageLogo from "./Images/G.png";
 import placeholderImageFB from "./Images/fb.png";
 import placeholderImageIS from "./Images/insta.png";
 import placeholderImageLI from "./Images/linkedIn.png";
@@ -8,9 +8,9 @@ import placeholderImageTW from "./Images/twitter2.png";
 
 function Footer(){
     return(
-        <Container fluid className="footer-con">
+        <Row className="footer-con">
             <Row className="footer-header">
-                <Col><Image src={placeholderImageLogo} className="logo-image"/></Col>
+                <Col><a href="/"><Image src={placeholderImageLogo} className="logo-image"/></a></Col>
             </Row>
             <Row className="footer-navigation">
             <Col className="footer-navigation-col"><h5><a href="/" className="anchor">Home</a><span className="separation"></span></h5></Col>
@@ -27,7 +27,7 @@ function Footer(){
             <Row className="copyright">
                 <Col>@2021 Web Services Team#2</Col>
             </Row>
-        </Container>
+        </Row>
     )
 }
 export default Footer;

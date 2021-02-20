@@ -1,8 +1,12 @@
 import powerslap from'./video.mp4'
 import './App.css';
 import axios from 'axios';
+import Footer from './Footer.js';
+
 // import { browserHistory } from 'react-router';
 import { useHistory } from "react-router-dom";
+import { Row } from 'react-bootstrap';
+
 function Home(){
     const history = useHistory();
     function handleClick() {
@@ -52,7 +56,7 @@ function Home(){
             >
                 <source src ={powerslap} type="video/mp4" />
             </video>
-        </div>
+        </div>        
     )
 }
 export default Home;
