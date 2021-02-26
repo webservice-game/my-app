@@ -6,29 +6,31 @@ import { useHistory } from "react-router-dom";
 function Home(){
     const history = useHistory();
     function handleClick() {
-        const options = {
-            method: 'GET',
-            url: 'https://call-of-duty-modern-warfare.p.rapidapi.com/leaderboard/1/battle',
-            headers: {
-              'x-rapidapi-key': 'ac093ee1f2msh711c9d5589d4e08p129456jsn3424f2f8ce58',
-              'x-rapidapi-host': 'call-of-duty-modern-warfare.p.rapidapi.com'
-            }
-          };
+        history.push(
+            {
+                pathname:"/start",
+                // state:{detail:response.data}
+        });
+        // const options = {
+        //     method: 'GET',
+        //     url: 'https://api.pubg.com/shards/pc-na/leaderboards/division.bro.official.console-03/squad',
+        //     headers: {
+             
+        //       'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI5ZWQzNmVlMC01NDJkLTAxMzktZjdhNC01NzUxZjM2N2FmMzQiLCJpc3MiOiJnYW1lbG9ja2VyIiwiaWF0IjoxNjEzNjYyODU4LCJwdWIiOiJibHVlaG9sZSIsInRpdGxlIjoicHViZyIsImFwcCI6Ii0xYjJjN2NhMy01NjZlLTQ1ODYtOTk4OC1iZjBhZmM5ZTJmODMifQ.PxgiPhW--aQAKlhRaiGwriuiSir2gILZVB5tuXZtLXQ',
+        //       'Accept': 'application/vnd.api+json'
+        //     }
+        //   };
           
-          axios.request(options).then(function (response) {
-            console.log(response.data.entries);
-            var  newData = JSON.stringify(response.data)
+         
+         
+        
             // var myObject = JSON.parse(newData);
             
             // console.log(newData)
-            history.push(
-                {
-                    pathname:"/start",
-                    state:{detail:response.data}
-            });
-          }).catch(function (error) {
-            console.error(error);
-          });
+          
+        //   }).catch(function (error) {
+        //     console.error(error);
+        //   });
       
       }
     return(
