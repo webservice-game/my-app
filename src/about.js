@@ -25,7 +25,9 @@ function About(){
                 <Col className="section-title"><h2>OUR STORY</h2></Col>
             </Row>
             <Row className="body-row">
-                <Col className="section-content"><p>...Our Story Content...</p></Col>
+                <Col className="section-content"><p>The GMatch team is comprised of four unique individuals with a common goal: creating a platform to help players find their team. With GMatch, you can match with gamers with similar interests and skill level. GMatch is the premier site to match gamers all over the world and is the perfect haven for locating your ideal team.
+                                                    Upon seeing first-hand how difficult it can be to find teammates for online games, we began developing this app to help gamers globally and to fill a sector of the gaming world that's missing. 
+                                                    Use GMatch to find players who are in search of teammates with similar skill sets, tendencies, and attitudes. Our team wants to help you find your team.</p></Col>
             </Row>
             <Row className="body-row">
                 <Col className="section-title"><h2>MEET THE TEAM MEMBERS</h2></Col>
@@ -61,7 +63,7 @@ function About(){
                     <h5>Team Member</h5>
                     <p>Phuong is currently a graduate student at Kennesaw State University. His bachelor degree is in 
                         Civil Engineering. He is always facinated about how computer technology works and developped. 
-                        That is why he have chosen Software Engineering for his advance degree. Completing this web app 
+                        That is why he has chosen Software Engineering for his advance degree. Completing this web app 
                         in a timely manner will help him gain more experiences in web application development and increase 
                         chances for job seeking in the future.</p>
                 </Col>
