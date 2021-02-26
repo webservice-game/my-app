@@ -4,8 +4,8 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 resources:
   pipelines:
-  - pipeline: webservice-game.my-app (2)  # Name of the pipeline resource
-    source: webservice-game.my-app (2)  # Name of the pipeline referenced by the pipeline resource
+  - pipeline: gmatch  # Name of the pipeline resource
+    source: gmatch  # Name of the pipeline referenced by the pipeline resource
     trigger: 
       branches:
       
