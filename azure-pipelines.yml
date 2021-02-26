@@ -21,6 +21,7 @@ steps:
 - script: |
     pushd $(uiSource)
     npm install
+    npm test
     npm run build
     popd
 - task: ArchiveFiles@2
