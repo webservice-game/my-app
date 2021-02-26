@@ -14,7 +14,7 @@ function Footer(){
             </Row>
             <Row className="footer-navigation">
             <Col className="footer-navigation-col"><h5><a href="/" className="anchor">Home</a><span className="separation"></span></h5></Col>
-                <Col className="footer-navigation-col"><h5><a href="/about" className="anchor">About U</a><span className="separation"></span></h5></Col>
+                <Col className="footer-navigation-col"><h5><a href="/about" className="anchor">About Us</a><span className="separation"></span></h5></Col>
                 <Col className="footer-navigation-col"><h5><a href="/how-it-works" className="anchor">How it works</a></h5></Col>
             </Row>
             <Row><div className="footer-line"></div></Row>
