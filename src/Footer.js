@@ -25,7 +25,7 @@ function Footer(){
                 <Col><a><Image src={placeholderImageTW} className="media-img" /></a></Col>
             </Row>
             <Row className="copyright">
-                <Col>@2021 Web Services Team#2</Col>
+                <Col>@2021 Web Services Team#</Col>
             </Row>
         </Row>
     )
