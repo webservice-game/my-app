@@ -60,7 +60,7 @@ function About(){
                 <Col ><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
                 <Col className="member-info">
                     <h3><strong>Phuong Nguyen</strong></h3>
-                    <h5>Team Membe</h5>
+                    <h5>Team Member</h5>
                     <p>Phuong is currently a graduate student at Kennesaw State University. His bachelor degree is in 
                         Civil Engineering. He is always facinated about how computer technology works and developped. 
                         That is why he has chosen Software Engineering for his advance degree. Completing this web app 
