@@ -40,9 +40,9 @@ function Home(){
     return(
         <div className="home" style={{height: "990px", paddingBottom: "100px"}}>
             <div style={{transform:'translatey(300px)'}}>
-                <h1>The Ultimate Destination</h1>
+        <div className='Line1'> <h1>The Ultimate Destination</h1></div>
                 <h1>For Gamers Match Making</h1>
-                <button onClick={handleClick}>Get Started</button>
+               <div className='getStartedButton'>  <button onClick={handleClick}>Get Started</button></div>
             </div>
             <video autoPlay loop muted
             style={{
