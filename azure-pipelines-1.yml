@@ -21,6 +21,10 @@ steps:
   displayName: 'npm install and build'
 
 - script: |
+    npm run test:ci
+  displayName: 'frontend tests'
+
+- script: |
     npm run build:staging
   displayName: 'frontend staging build'
 
