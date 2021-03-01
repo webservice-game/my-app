@@ -41,7 +41,7 @@ function Home(){
         <div className="home" style={{height: "990px", paddingBottom: "100px"}}>
             <div style={{transform:'translatey(300px)'}}>
         <div className='Line1'> <h1>The Ultimate Destination</h1></div>
-                <h1>For Gamers Match Making</h1>
+<div className= 'Line2'> <h1>For Gamers Match Making</h1></div>
                <div className='getStartedButton'>  <button onClick={handleClick}>Get Started</button></div>
             </div>
             <video autoPlay loop muted
