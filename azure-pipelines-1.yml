@@ -18,17 +18,14 @@ steps:
 - script: |
     npm install
     npm run build
-  workingDirectory: MY-APP
   displayName: 'npm install and build'
 
 - script: | 
     npm run test:ci
-  workingDirectory: MY-APP
   displayName: 'frontend tests'
 
 - script: |
     npm run build:staging
-  workingDirectory: MY-APP
   displayName: 'frontend staging build'
 
 - task: ArchiveFiles@2
@@ -48,7 +45,6 @@ steps:
 
 - script: |
     npm run build:production
-  workingDirectory: MY-APP
   displayName: 'frontend production build'
 
 - task: ArchiveFiles@2
