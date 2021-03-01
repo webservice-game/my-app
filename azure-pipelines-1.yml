@@ -18,4 +18,49 @@ steps:
 - script: |
     npm install
     npm run build
+  workingDirectory: MY-APP
   displayName: 'npm install and build'
+
+- script: | 
+    npm run test:ci
+  workingDirectory: MY-APP
+  displayName: 'frontend tests'
+
+- script: |
+    npm run build:staging
+  workingDirectory: MY-APP
+  displayName: 'frontend staging build'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: 'MY-APP/build'
+    includeRootFolder: false
+    archiveType: zip
+    archiveFile: '$(Build.ArtifactStagingDirectory)/frontend-staging/build.zip'
+    replaceExistingArchive: true
+  displayName: 'frontend staging zip files'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/frontend-staging'
+    ArtifactName: 'frontend-staging'
+  displayName: 'frontend staging publish to pipeline'
+
+- script: |
+    npm run build:production
+  workingDirectory: MY-APP
+  displayName: 'frontend production build'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: 'frontend-build'
+    includeRootFolder: false
+    archiveType: zip
+    archiveFile: '$(Build.ArtifactStagingDirectory)/frontend-production/build.zip'
+    replaceExistingArchive: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/frontend-production'
+    ArtifactName: 'frontend-production'
+  displayName: 'frontend production publish to pipeline'
