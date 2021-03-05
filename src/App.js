@@ -10,6 +10,7 @@ import Home from './home'
 import About from './about';
 import HowItWorks from './howItWorks.js';
 import Started from './getstarted.js';
+import Profile from './profile'
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
             </Route>
             <Route path="/start">
               <Started />
+            </Route>
+            <Route path="/Profile">
+              <Profile />
             </Route>
           </Switch>
         </div>
