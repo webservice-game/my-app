@@ -15,7 +15,7 @@ function HowItWorks(){
                 <Col className="section-title"><h2>***CONTENT***</h2></Col>
             </Row>
             <Row>
-                <Col>
+                 <Col className="HIWDescription">
                 <h3>This is How It Works page</h3>
                 </Col>
             </Row>
