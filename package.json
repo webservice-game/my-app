@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack",
     "test": "react-scripts test",
     "test:ci": "cross-env CI=true reacts-scripts test",
     "eject": "react-scripts eject"
@@ -52,6 +52,8 @@
     "enzyme-adapter-react-16": "^1.15.6",
     "jest": "^26.6.0",
     "jest-enzyme": "^7.1.2",
-    "react-test-renderer": "^17.0.1"
+    "react-test-renderer": "^17.0.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
   }
 }
