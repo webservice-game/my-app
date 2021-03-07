@@ -1,7 +1,9 @@
 // <?xml version="1.0"?>
 <configuration>
  <system.webServer>
+ <customErrors mode="Off"/>
  <rewrite>
+
  <rules>
  <rule name="React Routes" stopProcessing="true">
  <match url=".*" />
