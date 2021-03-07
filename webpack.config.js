@@ -1,18 +1,18 @@
-const path=require('path');
-const CopyWebpackPlugin=require('copy-webpack-plugin');
-module.exports={
-    entry:'./app/index.js',
-    output:{
-        path:path.resolve('dist'),
-        filename:'index_bundle.js'
-    },
-    module:{
-        rules:[
-            {test: /\.js$/, loader: 'babel-loader',exclude: /node_modules/}
-        ]
-    },plugins:[
-        new CopyWebpackPlugin([{
-            from:'./*.html'
-        }])
-    ]
-}
+// <?xml version="1.0"?>
+<configuration>
+ <system.webServer>
+ <rewrite>
+ <rules>
+ <rule name="React Routes" stopProcessing="true">
+ <match url=".*" />
+ <conditions logicalGrouping="MatchAll">
+ <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+ <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+ <add input="{REQUEST_URI}" pattern="^/(api)" negate="true" />
+ </conditions>
+ <action type="Rewrite" url="/" />
+ </rule>
+ </rules>
+ </rewrite>
+ </system.webServer>
+</configuration>
