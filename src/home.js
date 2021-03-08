@@ -42,22 +42,9 @@ function Home(){
             <div style={{transform:'translatey(300px)'}}>
         <div className='Line1'> <h1>The Ultimate Destination</h1></div>
 <div className= 'Line2'> <h1>For Gamers Match Making</h1></div>
-               <div className='getStartedButton'>  <button onClick={handleClick}>Get Started</button></div>
+               <div className='getStartedButton'>  <button style={{"color":"#000"}}onClick={handleClick}>Get Started</button></div>
             </div>
-            {/* <video autoPlay loop muted
-            style={{
-                position:"absolute",
-                height:"100%",
-                width:"100%",
-                left:"50%",
-                top:"50%",
-                objectFit:"cover",
-                transform:"translate(-50%, -50%)",
-                zIndex:"-1"
-            }}
-            >
-                <source src ={powerslap} type="video/mp4" />
-            </video> */}
+          
         </div>        
     )
 }
