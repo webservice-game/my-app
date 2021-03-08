@@ -44,7 +44,7 @@ function Home(){
 <div className= 'Line2'> <h1>For Gamers Match Making</h1></div>
                <div className='getStartedButton'>  <button onClick={handleClick}>Get Started</button></div>
             </div>
-            <video autoPlay loop muted
+            {/* <video autoPlay loop muted
             style={{
                 position:"absolute",
                 height:"100%",
@@ -57,7 +57,7 @@ function Home(){
             }}
             >
                 <source src ={powerslap} type="video/mp4" />
-            </video>
+            </video> */}
         </div>        
     )
 }
