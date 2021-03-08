@@ -18,6 +18,7 @@ import { useHistory } from "react-router-dom";
   
 function Started() { 
   const [call,setCall]=useState([])
+  const [clicked,setClicked]=useState(false)
   const [count,setCount]=useState(1)
   const [friend,setFriend]=useState([])
   const history = useHistory();
@@ -37,8 +38,9 @@ function Started() {
         // this.getFoootball = this.getFoootball.bind(this)
       // }
       function callOfDuty()  {
+        setClicked(true)
         let counts = 1
-     
+        setCount(count + 1)
         var axios = require("axios").default;
         const options = {
           method: 'GET',
@@ -134,7 +136,7 @@ console.log(friend)
    }
   
    function showmoredata(){
-    setCount(count + 1)
+
     callOfDuty();
    }
    const paginatorLeft = <Button type="button" icon="pi pi-refresh" className="p-button-text" />;
@@ -145,7 +147,7 @@ console.log(friend)
        <Row style={{display: 'flex'}}>
          <Col lg={3} style={{minHeight:'100%'}}>
          <div style={{height:'100%',marginTop:'100px'}}>
-        <button  value="Change value" onClick={callOfDuty}>Call of Duty </button>
+        <button  value="Change value" onClick={callOfDuty} disabled={clicked}>Call of Duty </button>
         </div>
          </Col>
          <Col lg={9}>
