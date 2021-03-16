@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/94681b56-4fe6-4bb9-9786-2d732d59f1ed/resourceGroups/phuong/providers/Microsoft.Web/sites/phuong",
+    "appService.deploySubpath": "."
+}
