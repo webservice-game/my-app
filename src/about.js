@@ -45,7 +45,7 @@ function About(){
                 <Col className="member-info">
                     <h3><strong>Gopi Macha</strong></h3>
                     <h5>Team Member</h5>
-                    <p></p>
+                    <p>Gopi is currently a graduate student at Kennesaw State University.He had Two Years experience in Software field.Mainly with Front-end part of the applications. </p>
                 </Col>
             </Row>
             <Row className="body-row body-row-member">
