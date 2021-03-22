@@ -65,6 +65,54 @@
   text-transform: uppercase;
   font-size: 15px;
 }
+.image{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top:-21px;
+  z-index: -1;
+}
+.inside{
+  /* visibility: visible; */
+  /* -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; */
+  padding: 50px;
+  width: 33.3333334%;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+
+}
+.Highlight{
+  padding: 5px;
+    margin: 25px 15%;
+    background: linear-gradient(to right, rgba(234,89,18,1) 0%,rgba(247,25,92,1) 100%);
+    border-radius: 500px;
+}
+.HighlightIconInner{
+  border-radius: 500px;
+  background: #000;
+  position: relative;
+  box-sizing: border-box;
+}
+.HighlightIconInner img{
+  padding:38px 30px 66px 30px;
+  vertical-align: middle;
+  width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.HighlightIconInner p{
+  margin:0;
+}
+.inside:hover{
+  transform-origin: center;
+    transform: scale(1.1);
+}
 .navbar li a:hover{
   background-color: black;
   color: white;

@@ -2,10 +2,12 @@ import powerslap from'./video.mp4'
 import './App.css';
 import axios from 'axios';
 import Footer from './Footer.js';
+import photo from './video1.jpg'
+import { Container, Row, Col, Image } from 'react-bootstrap';
 
 // import { browserHistory } from 'react-router';
 import { useHistory } from "react-router-dom";
-import { Row } from 'react-bootstrap';
+// import { Row } from 'react-bootstrap';
 
 function Home(){
     const history = useHistory();
@@ -38,12 +40,16 @@ function Home(){
       
       }
     return(
-        <div className="home" style={{height: "990px", paddingBottom: "100px"}}>
+        <div className="home" >
+            <div style={{height:"624px",position:"relative"}}>
             <div style={{transform:'translatey(300px)'}}>
         <div className='Line1'> <h1>The Ultimate Destination</h1></div>
 <div className= 'Line2'> <h1>For Gamers Match Making</h1></div>
-               <div className='getStartedButton'>  <button style={{"color":"#000"}} onClick={handleClick}>Get Started</button></div>
+               <div className='getStartedButton'>  <button  onClick={handleClick}>Get Started</button></div>
             </div>
+            <div  className="image" style={{ backgroundImage: `url(${photo})`}}></div>
+            </div>
+          
             {/* <video autoPlay loop muted
             style={{
                 position:"absolute",
@@ -58,6 +64,64 @@ function Home(){
             >
                 <source src ={powerslap} type="video/mp4" />
             </video> */}
+    
+            <div>
+<Container>
+    <Row style={{paddingLeft:"100px"}}>
+        <Col lg={{ size: 10, offset: 1 }} md={{ size: 12, offset: 1 }} >
+            <Col  className="inside" md="3">
+            <div className="Highlight">
+                <div className="HighlightIconInner"> 
+<div>
+    <img src={photo} />
+    {/* <p>benifit1</p> */}
+</div>
+
+                </div>
+            </div>
+            <h3>Benifit1</h3>
+<div>
+    <p>Eliminate thirst. Packed with electrolytes, vitamins and minerals at the perfect dosages for optimum hydration throughout your session.</p>
+</div>
+            </Col>
+            <Col md="3" className="inside">
+            <div className="Highlight">
+                <div className="HighlightIconInner"> 
+<div>
+    <img src={photo} />
+    {/* <p>benifit1</p> */}
+</div>
+
+                </div>
+            </div>
+            <h3>Benifit2</h3>
+<div>
+    <p>Eliminate thirst. Packed with electrolytes, vitamins and minerals at the perfect dosages for optimum hydration throughout your session.</p>
+</div>
+            </Col>
+            <Col md="3" className="inside">
+            <div className="Highlight">
+                <div className="HighlightIconInner"> 
+<div>
+    <img src={photo} />
+    {/* <p>benifit1</p> */}
+</div>
+
+                </div>
+            </div>
+            <h3>Benifit3</h3>
+<div>
+    <p>Eliminate thirst. Packed with electrolytes, vitamins and minerals at the perfect dosages for optimum hydration throughout your session.</p>
+</div>
+            </Col>
+        </Col>
+    </Row>
+</Container>
+
+
+
+            </div>
+            <Footer />
         </div>        
     )
 }

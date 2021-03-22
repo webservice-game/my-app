@@ -22,6 +22,7 @@ function Started() {
   const [count,setCount]=useState(1)
   const [friend,setFriend]=useState([])
   const history = useHistory();
+ const [friendnotclicked,setno]=useState(true)
   let data=[]
   let or=[]
   // let count=1;
@@ -37,6 +38,9 @@ function Started() {
       
         // this.getFoootball = this.getFoootball.bind(this)
       // }
+      useEffect(async()=>{
+        callOfDuty();
+      },[])
       function callOfDuty()  {
         setClicked(true)
         let counts = 1
@@ -106,8 +110,11 @@ function Started() {
     function addButton(rowData){
       // console.log(rowData)
       return <div>
-        <button onClick={(event) => buttonClick(rowData)}>{rowData.name}</button>
-        <button onClick={(event) => removeClick(rowData)}>Remove Friend</button>
+        {friendnotclicked && <button onClick={(event) => buttonClick(rowData)}>{rowData.name}</button>}
+    
+  {!friendnotclicked && <button onClick={(event) => removeClick(rowData)}>Remove Friend</button>}
+     
+      
       </div>
     }
    function buttonClick(rowdata){
@@ -119,6 +126,19 @@ console.log(friend)
    }
    function removeClick(rowdata){
      console.log(rowdata)
+     friend.map((item,index)=>{
+       if(item.playerName==rowdata.playerName){
+        friend.splice(index,1)
+        setFriend(friend)
+        // console.log(friend)
+      
+       }
+     })
+     setCall([])
+     setCall(old => [...old, ...friend]);
+     console.log(call)
+    //  setCall([]);
+  
    }
   function rowColumnClick(rowData){
     console.log(rowData)
@@ -139,6 +159,12 @@ console.log(friend)
 
     callOfDuty();
    }
+   function friendsList(){
+     setno(false)
+    setCall([]);
+    setCall(friend)
+    console.log(call)
+   }
    const paginatorLeft = <Button type="button" icon="pi pi-refresh" className="p-button-text" />;
     const paginatorRight = <Button type="button" icon="pi pi-cloud" className="p-button-text" />;
     return (
@@ -147,7 +173,7 @@ console.log(friend)
        <Row style={{display: 'flex'}}>
          <Col lg={3} style={{minHeight:'100%'}}>
          <div style={{height:'100%',marginTop:'100px'}}>
-        <button  value="Change value" onClick={callOfDuty} disabled={clicked}>Call of Duty </button>
+         <button  value="Change value" onClick={friendsList} >Friends List </button> 
         </div>
          </Col>
          <Col lg={9}>
@@ -165,7 +191,8 @@ console.log(friend)
                
                {/* <Column field="quantity" header="Quantity"></Column> */}
            </DataTable>
-           <div onClick={showmoredata}>showmore</div>
+           {friendnotclicked && <div onClick={showmoredata}>showmore</div>}
+             
            {/* <Paginator first={1} rows={4} ></Paginator> */}
           {/* } */}
                
