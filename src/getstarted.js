@@ -194,7 +194,8 @@ console.log(friend)
                 
                 {/* <Column field="quantity" header="Quantity"></Column> */}
             </DataTable>
-            <div onClick={showmoredata} className="show-more-button">showmore</div>
+              <div onClick={showmoredata} className="show-more-button">Show More</div>
+            
             {/* <Paginator first={1} rows={4} ></Paginator> */}
             {/* } */}
                 
