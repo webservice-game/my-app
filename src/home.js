@@ -96,7 +96,7 @@ function Home(){
             </div>
             <h3>Benifit2</h3>
 <div>
-    <p>Eliminate thirst. Packed with electrolytes, vitamins and minerals at the perfect dosages for optimum hydration throughout your session.</p>
+    <p>Eliminat thirst. Packed with electrolytes, vitamins and minerals at the perfect dosages for optimum hydration throughout your session.</p>
 </div>
             </Col>
             <Col md="3" className="inside">
