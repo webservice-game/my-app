@@ -1,0 +1,163 @@
+.get-started-con{
+    background-color: #f5f3f3;
+}
+
+.game-name-board{
+    margin: 30px 20px 30px 30px;
+}
+
+.game-name-div{
+    width: 120px;
+    height: 60px;
+}
+
+.game-name-button{
+    background-color: #75868b;;
+    border: none;
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.game-name-button:hover{
+    background-color: #530102;
+    color: white;
+}
+
+.get-started-row{
+    display: flex;
+    justify-content: center;
+}
+
+.game-data-board{
+    overflow-x: scroll;
+    margin-right: 30px;
+}
+
+.p-datatable-wrapper {
+    margin-top: 30px;
+    color: rgb(110, 110, 110);
+}
+
+.p-datatable-thead tr{
+    border: none;
+}
+
+.p-datatable-thead tr th{
+    text-align: left;
+}
+
+.p-datatable-thead tr th:first-child{
+    padding-left: 0;
+}
+
+.p-filter-column .p-inputtext{
+    font-size: 11px;
+    color: rgba(11, 78, 221, 0.589);
+}
+
+.p-datatable-tbody{
+    background-color: white;
+    margin-top: 10px;
+    border-bottom: 1px solid red;
+    font-size: 10px;
+}
+
+.p-datatable-tbody tr:nth-child(even){
+    background-color: white;
+}
+
+.p-datatable-tbody tr{
+    border-bottom: 2px solid lightgray;
+}
+
+.p-datatable-tbody tr:hover{
+    background-color: lightgray;
+}
+
+.column-name{
+    padding-left: 10px;
+    text-align: left;
+}
+
+.column-rank{
+    width: auto;
+}
+
+.column-actions div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-actions button{
+    font-size: 10px;
+    width: 100px;
+    margin: 5px;
+    background-color: #75868b;
+    color: white;
+    border: none;
+}
+
+.column-actions button:hover{
+    background-color: #530102;
+}
+
+.show-more-button{
+    padding: 5px;
+    font-weight: bold;
+    background-color: #75868b;
+    color: white;
+}
+
+.show-more-button:hover{
+    cursor: pointer;
+    background-color: #530102;
+    color: white;
+}
+
+.column-name div a{
+    color: #75868b;
+}
+
+.column-name div a:hover{
+    text-decoration: none;
+    color: #530102;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .game-name-button{
+        font-size: 13px;
+    }
+
+    .p-datatable-tbody{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .game-name-button{
+        font-size: 15px;
+    }
+
+    .p-datatable-thead tr th{
+        font-size: 16px;
+        color: #75868b;
+    }
+
+    .p-inputtext::placeholder{
+        font-size: 13px;
+        color: #9b9b9baf;
+    }
+    
+    .p-datatable-tbody tr{
+        font-size: 13px;
+        height: 55px;
+    }
+
+    .column-actions button{
+        height: 30px;
+    }
+}

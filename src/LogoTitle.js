@@ -5,7 +5,7 @@ import placeholderImageLogo from "./Images/G.png";
 function LogoTitle(){
     return(
         <Row>
-            <Col><Image src={placeholderImageLogo} className="logo-title" /></Col>
+            <Col><a href="/"><Image src={placeholderImageLogo} className="logo-title" /></a></Col>
         </Row>
     )
 }

@@ -65,6 +65,7 @@
   text-transform: uppercase;
   font-size: 15px;
 }
+
 .image{
   height: 100%;
   width: 100%;
@@ -114,7 +115,7 @@
     transform: scale(1.1);
 }
 .navbar li a:hover{
-  background-color: black;
+  background-color: #530102;
   color: white;
 }
 

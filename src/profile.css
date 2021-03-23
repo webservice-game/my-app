@@ -1,0 +1,23 @@
+.table-col{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.table tbody tr:nth-child(odd){
+    background-color: #353a40;
+    color: white;
+}
+
+.table tbody tr:nth-child(even){
+    background-color: #3f444a;
+    color: white;
+}
+
+.table tbody tr:hover{
+    background-color: #4e545c;
+}
+
+.table tbody tr td:first-child{
+}
+
