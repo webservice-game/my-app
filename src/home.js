@@ -68,7 +68,7 @@ function Home(){
             <div>
 <Container>
     <Row style={{paddingLeft:"100px"}}>
-        <Col lg={{ size: 10, offset: 1 }} md={{ size: 12, offset: 1 }} >
+        <Col lg={{ size: 10, offset: 1 }} md={{ size: 12, offset: 1 }} style={{display: 'flex', justifyContent: 'center'}}>
             <Col  className="inside" md="3">
             <div className="Highlight">
                 <div className="HighlightIconInner"> 
