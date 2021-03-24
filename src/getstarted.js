@@ -197,12 +197,12 @@ console.log(friend)
             {/* {!this.state.started &&  */}
             <DataTable value={call} >
             
-            <Column field="playerName" header="Name" body={dateTemplate} filter filterPlaceholder="Search by name" className="column-name"></Column>
-                <Column field="rank" header="Rank"  filter filterPlaceholder="Search by rank" className="column-rank"></Column>
+            <Column field="playerName" header="Name" body={dateTemplate} filter filterPlaceholder="Search by name" className="column-name styho"></Column>
+                <Column field="rank" header="Rank"  filter filterPlaceholder="Search by rank" className="column-rank styho"></Column>
                 
-                <Column field="level" header="Level" filter filterPlaceholder="Search by level" className="column-level"></Column>
-                <Column field="timeplayed" header="Time-Played" filter filterPlaceholder="Search by time" className="column-timeplay"></Column>
-                <Column field="wins" header="Wins" filter filterPlaceholder="Search by wins" className="column-wins"></Column>
+                <Column field="level" header="Level" filter filterPlaceholder="Search by level" className="column-level styho"></Column>
+                <Column field="timeplayed" header="Time-Played" filter filterPlaceholder="Search by time" className="column-timeplay styho"></Column>
+                <Column field="wins" header="Wins" filter filterPlaceholder="Search by wins" className="column-wins styho"></Column>
                 <Column field="name" header="Actions" body={addButton} className="column-actions"></Column>
                 
                 {/* <Column field="quantity" header="Quantity"></Column> */}

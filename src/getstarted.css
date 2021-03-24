@@ -75,7 +75,12 @@
 .p-datatable-tbody tr:hover{
     background-color: lightgray;
 }
-
+.p-datatable-tbody tr:hover td:last-child{
+    background-color: #fff;
+}
+/* .styho:hover{
+    background-color: lightgray; 
+} */
 .column-name{
     padding-left: 10px;
     text-align: left;
