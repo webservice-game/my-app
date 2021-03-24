@@ -66,6 +66,8 @@ function Started() {
                         playerName:ele.username,
                         level:ele.values.level,
                         name:'AddFriend',
+                        addDisable:false,
+                        removeDisable:false,
                         timeplayed:ele.values.timePlayed,
                         wins:ele.values.wins,
                         kills: ele.values.kills,
@@ -117,7 +119,7 @@ function Started() {
     function addButton(rowData){
       // console.log(rowData)
       return <div>
-        {friendnotclicked && <button onClick={(event) => buttonClick(rowData)}>{rowData.name}</button>}
+        {friendnotclicked && <button  disabled={rowData.addDisable} onClick={(event) => buttonClick(rowData)}>{rowData.name}</button>}
     
         {!friendnotclicked && <button onClick={(event) => removeClick(rowData)}>Remove Friend</button>}
      
@@ -125,6 +127,12 @@ function Started() {
       </div>
     }
    function buttonClick(rowdata){
+  call.map((item, index)=>{
+       if(rowdata.playerName==item.playerName)
+       item.addDisable=true;
+     })
+     console.log(call)
+    //  setCall(old => [...old, ...data]);
 // console.log(rowdata)
 let array=[rowdata]
 setFriend(old => [...old, ...array]);
