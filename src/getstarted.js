@@ -9,6 +9,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Paginator } from 'primereact/paginator';
 import { Button } from 'primereact/button';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -180,10 +181,30 @@ console.log(friend)
     setCall(friend)
     console.log(call)
    }
+
    const paginatorLeft = <Button type="button" icon="pi pi-refresh" className="p-button-text" />;
     const paginatorRight = <Button type="button" icon="pi pi-cloud" className="p-button-text" />;
+    const cols = [
+      { field: 'playerName', header: 'Name' },
+      { field: 'rank', header: 'Rank' },
+      { field: 'level', header: 'Level' },
+      { field: 'timeplayed', header: 'Time-Played' },
+      { field: 'wins', header: 'Wins' }
+  ];
+
+  const exportColumns = cols.map(col => ({ title: col.header, dataKey: col.field }));
+    const exportPdf = () => {
+      import('jspdf').then(jsPDF => {
+          import('jspdf-autotable').then(() => {
+              const doc = new jsPDF.default(0, 0);
+              doc.autoTable(exportColumns, call);
+              doc.save('products.pdf');
+          })
+      })
+  }
     return (
       <div>
+         <Button type="button" icon="pi pi-file-pdf" onClick={exportPdf} className="p-button-warning p-mr-2" data-pr-tooltip="PDF" />
      <Container fluid className="get-started-con">
         <LogoTitle />
         <Row className="get-started-row">
