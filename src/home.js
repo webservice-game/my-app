@@ -3,7 +3,9 @@ import './App.css';
 import axios from 'axios';
 import Footer from './Footer.js';
 import photo from './video1.jpg'
-import time from './Images/quality.png';
+import time from './Images/timenew.jpg'
+import quality from './Images/quality.jpg'
+import data from './Images/data.jpg'
 import { Container, Row, Col, Image } from 'react-bootstrap';
 
 // import { browserHistory } from 'react-router';
@@ -89,7 +91,7 @@ function Home(){
             <div className="Highlight">
                 <div className="HighlightIconInner"> 
 <div>
-    <img src={photo} />
+    <img src={quality} />
     {/* <p>benifit1</p> */}
 </div>
 
@@ -104,7 +106,7 @@ function Home(){
             <div className="Highlight">
                 <div className="HighlightIconInner"> 
 <div>
-    <img src={photo} />
+    <img src={data} />
     {/* <p>benifit1</p> */}
 </div>
 
