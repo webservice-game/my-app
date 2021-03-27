@@ -336,5 +336,23 @@ html, body{
   .separation::after{
     content: "\00a0\00a0\00a0\00a0\00a0|";
   }
+  .mobile{
+    display: block;
+  }
 }
 
+@media only screen and (max-width: 992px){
+  .mobile{
+    display: block !important;
+  }
+  .inside{
+    width: 210px
+  }
+  .game-name-div {
+    width: 40px !important;
+    height: 35px !important;
+}
+.game-name-board {
+  margin: 30px 20px 30px 5px !important;
+}
+}

@@ -8,7 +8,10 @@
 
 .game-name-div{
     width: 120px;
-    height: 60px;
+    height: 47px;
+    position: absolute;
+    top: 100px;
+
 }
 
 .game-name-button{
@@ -107,6 +110,7 @@ border: none !important;
     background-color: #75868b;
     color: white;
     border: none;
+    height: 30px;
 }
 
 .column-actions button:hover{

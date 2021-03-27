@@ -220,12 +220,13 @@ console.log(friend)
          {/* <Tooltip target=".export-buttons>button" position="bottom" /> */}
      <Container fluid className="get-started-con">
         <LogoTitle />
-        <Row className="get-started-row">
-          {friend.length &&<Col className="game-name-board">
+      
           <div className="game-name-div">
             <button  value="Change value" onClick={friendsList} className="game-name-button">Friends List</button> 
           </div>
-          </Col>}
+   
+        <Row className="get-started-row">
+    
           <Col className="game-data-board">
           <div className="card">
             {/* {!this.state.started &&  */}
