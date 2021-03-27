@@ -72,11 +72,15 @@
     border-bottom: 2px solid lightgray;
 }
 
-.p-datatable-tbody tr:hover{
+.p-datatable .p-datatable-tbody tr:hover{
     background-color: lightgray;
 }
 .p-datatable-tbody tr:hover td:last-child{
     background-color: #fff;
+}
+.p-datatable .p-datatable-header {
+background: none !important;
+border: none !important;
 }
 /* .styho:hover{
     background-color: lightgray; 
@@ -114,6 +118,13 @@
     font-weight: bold;
     background-color: #75868b;
     color: white;
+    width: 200px;
+  
+    height: 50px;
+    border-radius: 30px;
+}
+.pi{
+    font-size:2rem !important;
 }
 
 .show-more-button:hover{

@@ -6,9 +6,12 @@ import './getstarted.css'
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import { Paginator } from 'primereact/paginator';
-import { Button } from 'primereact/button';
 
+import { Button } from 'primereact/button';
+import "primeicons/primeicons.css";
+import "primereact/resources/themes/saga-blue/theme.css"
+import "primereact/resources/primereact.css";
+// import "primeflex/primeflex.css";
 
 import {
   BrowserRouter as Router,
@@ -202,21 +205,31 @@ console.log(friend)
           })
       })
   }
+  const header = (
+    
+
+        <Button type="button" title="export toPDF" icon="pi pi-file-pdf" onClick={exportPdf} className="p-button-warning p-mr-2" data-pr-tooltip="PDF" />
+      
+
+);
     return (
       <div>
-         <Button type="button" icon="pi pi-file-pdf" onClick={exportPdf} className="p-button-warning p-mr-2" data-pr-tooltip="PDF" />
+           {/* <div className="p-d-flex export-buttons">
+           <Button type="button" icon="pi pi-file-pdf" onClick={exportPdf} className="p-button-warning p-mr-2 pdf" data-pr-tooltip="PDF" />
+           </div> */}
+         {/* <Tooltip target=".export-buttons>button" position="bottom" /> */}
      <Container fluid className="get-started-con">
         <LogoTitle />
         <Row className="get-started-row">
-          <Col className="game-name-board">
+          {friend.length &&<Col className="game-name-board">
           <div className="game-name-div">
             <button  value="Change value" onClick={friendsList} className="game-name-button">Friends List</button> 
           </div>
-          </Col>
+          </Col>}
           <Col className="game-data-board">
           <div className="card">
             {/* {!this.state.started &&  */}
-            <DataTable value={call} >
+            <DataTable value={call} header={!friendnotclicked?header:''}>
             
             <Column field="playerName" header="Name" body={dateTemplate} filter filterPlaceholder="Search by name" className="column-name styho"></Column>
                 <Column field="rank" header="Rank"  filter filterPlaceholder="Search by rank" className="column-rank styho"></Column>
@@ -228,7 +241,7 @@ console.log(friend)
                 
                 {/* <Column field="quantity" header="Quantity"></Column> */}
             </DataTable>
-            {friendnotclicked && <div onClick={showmoredata} className="show-more-button">Show More</div>}
+            {friendnotclicked && <div style={{marginTop:"10px"}}><button  className="show-more-button" onClick={showmoredata}>Show More</button></div>}
               
             {/* <Paginator first={1} rows={4} ></Paginator> */}
             {/* } */}
