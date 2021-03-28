@@ -109,11 +109,11 @@ function Started() {
       
       // console.log(this.state.callofduty)
       }
-       function dateTemplate(rowData, column) {
+      function dateTemplate(rowData, column) {
         return <div>
             <a  onClick={(event) => rowColumnClick(rowData)} >{rowData.playerName}</a>
         </div>;
-    }
+      }
     function addButton(rowData){
       // console.log(rowData)
       return <div>
