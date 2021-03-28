@@ -21,6 +21,7 @@
     font-size: 10px;
     width: 100%;
     height: 100%;
+    margin-left: 50px;
 }
 
 .game-name-button:hover{
@@ -123,7 +124,7 @@ border: none !important;
     background-color: #75868b;
     color: white;
     width: 200px;
-  
+    border: none;
     height: 50px;
     border-radius: 30px;
 }

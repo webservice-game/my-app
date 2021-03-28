@@ -32,6 +32,7 @@ function Started() {
  const [friendnotclicked,setno]=useState(true)
   let data=[]
   let or=[]
+  
   // let count=1;
   // state= {
   //   callofduty:[],
@@ -72,6 +73,7 @@ function Started() {
                         name:'AddFriend',
                         addDisable:false,
                         removeDisable:false,
+                        color: '#75868b',
                         timeplayed:ele.values.timePlayed,
                         wins:ele.values.wins,
                         kills: ele.values.kills,
@@ -123,7 +125,7 @@ function Started() {
     function addButton(rowData){
       // console.log(rowData)
       return <div>
-        {friendnotclicked && <button  disabled={rowData.addDisable} onClick={(event) => buttonClick(rowData)}>{rowData.name}</button>}
+        {friendnotclicked && <button disabled={rowData.addDisable} style={{backgroundColor: rowData.color}} onClick={(event) => buttonClick(rowData)} >{rowData.name}</button>}
     
         {!friendnotclicked && <button onClick={(event) => removeClick(rowData)}>Remove Friend</button>}
      
@@ -131,9 +133,12 @@ function Started() {
       </div>
     }
    function buttonClick(rowdata){
+      
   call.map((item, index)=>{
-       if(rowdata.playerName==item.playerName)
+       if(rowdata.playerName==item.playerName){
        item.addDisable=true;
+       item.color='#530102';
+      }
      })
      console.log(call)
     //  setCall(old => [...old, ...data]);
@@ -222,7 +227,7 @@ console.log(friend)
         <LogoTitle />
       
           <div className="game-name-div">
-            <button  value="Change value" onClick={friendsList} className="game-name-button">Friends List</button> 
+            { friend[0]!=null && <button  value="Change value" onClick={friendsList} className="game-name-button">Friends List</button> }
           </div>
    
         <Row className="get-started-row">
