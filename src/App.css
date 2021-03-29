@@ -36,16 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
 .navbar{
   min-height: 50px;
   z-index: 1;
   background: #fff;
-  margin-top: 0
+  margin-top: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .navbar li{
   display:block;
-  float: left;
-  position: relative;
   text-decoration: none;
 }
 .navbar li a{
@@ -66,6 +67,11 @@
   font-size: 15px;
 }
 
+.logo-nav{
+  position: fixed;
+  left: 10px;
+}
+
 .image{
   height: 100%;
   width: 100%;
@@ -78,6 +84,7 @@
   top:-21px;
   z-index: -1;
 }
+
 .inside{
   /* visibility: visible; */
   /* -webkit-animation-name: fadeInUp;
@@ -117,6 +124,10 @@
 .navbar li a:hover{
   background-color: #530102;
   color: white;
+}
+
+.logo-nav:hover .logo-img{
+  background-color: white;
 }
 
 .home h1{
@@ -279,6 +290,12 @@ html, body{
 
 /***********Responsive with multiple devices**************/
 @media only screen and (min-width: 768px) {
+  .logo-nav{
+    left: 30px;
+  }
+  .navbar li:last-child{
+    margin-right: 30px;
+  }
   .body-row, .section-title, .section-content{
     padding-left: 50px;
     padding-right: 50px;
@@ -301,6 +318,12 @@ html, body{
 }
 
 @media only screen and (min-width: 992px) {
+  .logo-nav{
+    left: 50px;
+  }
+  .navbar li:last-child{
+    margin-right: 50px;
+  }
   .body-row, .section-title, .section-content{
     padding-left: 150px;
     padding-right: 150px;
@@ -351,8 +374,8 @@ html, body{
   .game-name-div {
     width: 40px !important;
     height: 35px !important;
-}
-.game-name-board {
-  margin: 30px 20px 30px 5px !important;
-}
+  }
+  .game-name-board {
+    margin: 30px 20px 30px 5px !important;
+  }
 }
