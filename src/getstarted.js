@@ -138,6 +138,7 @@ function Started() {
        if(rowdata.playerName==item.playerName){
        item.addDisable=true;
        item.color='#530102';
+       item.name='Added'
       }
      })
      console.log(call)

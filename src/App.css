@@ -120,6 +120,7 @@
 .inside:hover{
   transform-origin: center;
     transform: scale(1.1);
+    cursor: default;
 }
 .navbar li a:hover{
   background-color: #530102;
