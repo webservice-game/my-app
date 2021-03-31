@@ -53,7 +53,7 @@ function About(){
                  <Col className="member-info LeulName">
                     <h3><strong>Leul Endashaw</strong></h3>
                     <h5>Team Member</h5>
-                    <p></p>
+                    <p>I’m a students at Kennesaw state university doing my masters in software engineering. I did my bachelors degree in computer science, which started me on this journey and encouraged me to pursue it more. I’m currently working in this game matching project which has thought me a lot and gave me a chance to collaborate with my team mates.</p>
                 </Col>
             </Row>
             <Row className="body-row body-row-member">
