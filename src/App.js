@@ -13,7 +13,7 @@ import Started from './getstarted.js';
 import Profile from './profile'
 import LogoTitle from './LogoTitle';
 import placeholderImageLogo from "./Images/G.png";
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Navbar, Container, Row, Col, Image } from 'react-bootstrap';
 
 function App() {
   return (
@@ -40,7 +40,6 @@ function App() {
               <Link to="/start">Started</Link>
             </li> */}
           </ul>
-
           {/* <hr /> */}
           <Switch>
             <Route exact path="/">
