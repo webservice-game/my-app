@@ -1,81 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TestRun id="ed1ad1c8-ee47-4637-a348-c55beb6d4dfe" name="gopi@DESKTOP-I7T5DU9 2021-04-03T01:00:17.339Z" runUser="gopi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestSettings name="Jest test run" id="cecdb522-b2fc-45fb-9ada-849382f3aec8"/>
-  <Times creation="2021-04-03T01:00:17.339Z" queuing="2021-04-03T01:00:17.339Z" start="2021-04-03T01:00:17.339Z" finish="2021-04-03T01:00:17.339Z"/>
-  <ResultSummary outcome="Passed">
-    <Counters total="18" executed="18" passed="18" failed="0" error="0"/>
+<TestRun id="46234fbb-8ba8-47db-8638-6bfe8f1baced" name="gopi@DESKTOP-I7T5DU9 2021-04-03T01:38:36.001Z" runUser="gopi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Jest test run" id="21ed3ed0-003e-4c16-8998-8770c68b4197"/>
+  <Times creation="2021-04-03T01:38:36.001Z" queuing="2021-04-03T01:38:36.001Z" start="2021-04-03T01:38:36.001Z" finish="2021-04-03T01:38:36.001Z"/>
+  <ResultSummary outcome="Failed">
+    <Counters total="18" executed="18" passed="17" failed="1" error="0"/>
   </ResultSummary>
   <TestDefinitions>
-    <UnitTest name="testing / render the About Us title" id="15ebcad6-b742-4e82-8ed7-b3d9793d3f9c" storage="src\App.test.js">
-      <Execution id="d4a255cc-7306-473c-8447-aac49ec98600"/>
+    <UnitTest name="testing / render the About Us title" id="a1129673-7d81-4926-852d-10f222e926ad" storage="src\App.test.js">
+      <Execution id="5a12e4b3-e4f9-4641-b963-77e00e53695b"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render the About Us title" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render text in mission" id="e3137004-b682-4e6a-803c-843005b8e85f" storage="src\App.test.js">
-      <Execution id="c216c784-aef1-49e4-8256-7d4a10293549"/>
+    <UnitTest name="testing / render text in mission" id="2e49daf8-f7c1-42a8-ad24-98c9eb583139" storage="src\App.test.js">
+      <Execution id="a7d2ec06-d9dd-465b-80e9-c66d4d8b7cd4"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render text in mission" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render the team member section title" id="8a8c25ec-cf07-459c-87b8-1c3f2dd6fcd1" storage="src\App.test.js">
-      <Execution id="438f5f98-37c1-4d12-8e33-4dfa381bf4e4"/>
+    <UnitTest name="testing / render the team member section title" id="75a12c75-34e1-46af-9b71-f79b19d586d8" storage="src\App.test.js">
+      <Execution id="333a3a1f-c9c2-4f70-973e-d79de0e9edaa"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render the team member section title" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render homepage text" id="7144cbf8-ccc6-4ea9-94c5-a49b87c7f9d6" storage="src\App.test.js">
-      <Execution id="90fb57f2-1ea6-4ade-9358-6c4dbe30e678"/>
+    <UnitTest name="testing / render homepage text" id="1a979689-0897-4ff8-b871-979a19e2bdb5" storage="src\App.test.js">
+      <Execution id="dd06eebc-fb1b-4953-8e97-119dbeb9a0f9"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render homepage text" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render footer text - Home" id="840b582a-5daf-4494-a32b-b19eb928b383" storage="src\App.test.js">
-      <Execution id="e412ddac-7456-422a-b92e-857763e51d54"/>
+    <UnitTest name="testing / render footer text - Home" id="3ab2f6a6-8533-4c8a-ba21-727fea3c987e" storage="src\App.test.js">
+      <Execution id="6bb608db-0318-43b1-947c-1d15f8ff6668"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render footer text - Home" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render footer text - About Us" id="bcc8c49d-4f34-4260-8c8c-3dc9b8358c8e" storage="src\App.test.js">
-      <Execution id="1b050d23-62d5-430e-87f0-86edab5ddfcd"/>
+    <UnitTest name="testing / render footer text - About Us" id="7df6af87-18b2-4ae5-9859-b53ef7057dc2" storage="src\App.test.js">
+      <Execution id="f942160a-fd27-4b60-a609-22f72643b171"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render footer text - About Us" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render footer text - How It Works" id="b8a7fbbf-ab82-474f-990c-d33e2f4489f0" storage="src\App.test.js">
-      <Execution id="4cdb07a6-fdcf-484a-b0ea-791e9a9a962c"/>
+    <UnitTest name="testing / render footer text - How It Works" id="9fd2a405-bab6-4f1c-a030-484021bc4eaa" storage="src\App.test.js">
+      <Execution id="152a203a-a726-4355-ac3e-758e0d1d327c"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render footer text - How It Works" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render 'Our Story' title" id="bee259a4-a256-4e05-8ba3-ec77a570341c" storage="src\App.test.js">
-      <Execution id="34598432-2212-43f8-90c8-0577144f282b"/>
+    <UnitTest name="testing / render 'Our Story' title" id="5e97c693-95dc-41ac-8fc6-60bf818dfa66" storage="src\App.test.js">
+      <Execution id="4f984a4a-789f-4f20-a60f-984f6e56353c"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render 'Our Story' title" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render 'Our Story' text" id="d72b9fa4-0e50-4117-b1e1-1da29fa16c0b" storage="src\App.test.js">
-      <Execution id="446212f8-e270-4e2c-ae62-89bf45fdaee7"/>
+    <UnitTest name="testing / render 'Our Story' text" id="29512be7-0c52-4dbd-85ff-aca64918cd1a" storage="src\App.test.js">
+      <Execution id="0269c15b-9ede-4f76-944e-9822971ade72"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render 'Our Story' text" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render 'How It Works' title" id="0e81f790-a76d-4961-be7e-c2a0da91bfb1" storage="src\App.test.js">
-      <Execution id="7404ac94-f9e7-4865-a77a-5d256922735d"/>
+    <UnitTest name="testing / render 'How It Works' title" id="c264a633-d90f-43ec-8471-279cfe9cd9ad" storage="src\App.test.js">
+      <Execution id="a19e0772-75e6-4d40-9dce-c41f28f36a9e"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render 'How It Works' title" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render team member - Gopi" id="8d9f0630-8a63-41c4-b574-5408f5fd1af0" storage="src\App.test.js">
-      <Execution id="13fe4a66-2fc0-4816-8a48-81801a2e733e"/>
+    <UnitTest name="testing / render team member - Gopi" id="f3dc26aa-d563-45ac-830a-94f0490d4a98" storage="src\App.test.js">
+      <Execution id="dab4edb8-72cf-48e9-ad94-f5f5d8861e8d"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render team member - Gopi" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render team member - Phuong" id="6f916d7d-7545-4858-8b32-072433b5c9ef" storage="src\App.test.js">
-      <Execution id="30d4835b-b50e-47d7-81d8-0b526bde562e"/>
+    <UnitTest name="testing / render team member - Phuong" id="4b205a93-9871-4daf-88e7-aadd785a1a76" storage="src\App.test.js">
+      <Execution id="32a3b23e-be5a-4671-a04c-bee71306a769"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render team member - Phuong" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render team member - Leul" id="031aff43-1f11-4229-8b88-674444278d29" storage="src\App.test.js">
-      <Execution id="71710429-fd93-4cd1-9802-2763b080c79c"/>
+    <UnitTest name="testing / render team member - Leul" id="4f80f94c-1848-40f9-8ed0-fe66ad55f472" storage="src\App.test.js">
+      <Execution id="1259de0f-6646-4559-8b24-1ec956743ba4"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render team member - Leul" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render team member - Christy" id="393058fc-e08c-49e9-ba91-d645accb0361" storage="src\App.test.js">
-      <Execution id="9057561c-280f-4226-8d43-a81fbc700f1c"/>
+    <UnitTest name="testing / render team member - Christy" id="dacc1917-69cd-4b3b-bee7-0c2f151ccdc2" storage="src\App.test.js">
+      <Execution id="14b80511-c5d7-4e4e-8ac2-8a238b583b48"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render team member - Christy" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render Christy Description" id="23023164-215b-441f-b4cc-72267521d1ff" storage="src\App.test.js">
-      <Execution id="fe45a2b4-c29b-496d-b7d5-e1036feecb18"/>
+    <UnitTest name="testing / render Christy Description" id="5a83b990-aea0-47b4-9c10-db39edaa8e4b" storage="src\App.test.js">
+      <Execution id="af5a0527-2f1f-4bb7-8c42-265fa1b20975"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render Christy Description" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render Line2 of home" id="def49c55-d909-44bd-80f2-6e2504b60e33" storage="src\App.test.js">
-      <Execution id="933f5cbe-699f-4a88-a1a2-f68d2b3dedb3"/>
+    <UnitTest name="testing / render Line2 of home" id="c3dc8b70-8a34-4b6b-b4b8-25c9c22c7fcc" storage="src\App.test.js">
+      <Execution id="e5d15714-f436-43e0-a8fa-cbbbc1e54549"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render Line2 of home" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render Leul Description" id="14b2bb88-a4d7-45bd-b930-1334113c8cd8" storage="src\App.test.js">
-      <Execution id="d1858bf8-74d8-4b3e-8911-d37b24527dda"/>
+    <UnitTest name="testing / render Leul Description" id="14c08336-0c7b-4cb3-bd25-f2854db3766a" storage="src\App.test.js">
+      <Execution id="e7cd3d9a-9e1a-45fd-8852-9a4d014413be"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render Leul Description" className="testing"/>
     </UnitTest>
-    <UnitTest name="testing / render Gopi Description" id="01f31c8c-6a0a-474b-b9d2-ad2b9350015e" storage="src\App.test.js">
-      <Execution id="13d7316e-752c-48d0-8590-06cb3d3c143c"/>
+    <UnitTest name="testing / render Gopi Description" id="0b5635ec-2fb8-4b51-9037-5a96ade9c58b" storage="src\App.test.js">
+      <Execution id="1d0bea5e-aa08-49d6-8751-8ea2939ad489"/>
       <TestMethod codeBase="src\App.test.js" name="testing / render Gopi Description" className="testing"/>
     </UnitTest>
   </TestDefinitions>
@@ -84,43 +84,59 @@
     <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda"/>
   </TestLists>
   <TestEntries>
-    <TestEntry testId="15ebcad6-b742-4e82-8ed7-b3d9793d3f9c" executionId="d4a255cc-7306-473c-8447-aac49ec98600" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="e3137004-b682-4e6a-803c-843005b8e85f" executionId="c216c784-aef1-49e4-8256-7d4a10293549" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="8a8c25ec-cf07-459c-87b8-1c3f2dd6fcd1" executionId="438f5f98-37c1-4d12-8e33-4dfa381bf4e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="7144cbf8-ccc6-4ea9-94c5-a49b87c7f9d6" executionId="90fb57f2-1ea6-4ade-9358-6c4dbe30e678" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="840b582a-5daf-4494-a32b-b19eb928b383" executionId="e412ddac-7456-422a-b92e-857763e51d54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="bcc8c49d-4f34-4260-8c8c-3dc9b8358c8e" executionId="1b050d23-62d5-430e-87f0-86edab5ddfcd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="b8a7fbbf-ab82-474f-990c-d33e2f4489f0" executionId="4cdb07a6-fdcf-484a-b0ea-791e9a9a962c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="bee259a4-a256-4e05-8ba3-ec77a570341c" executionId="34598432-2212-43f8-90c8-0577144f282b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="d72b9fa4-0e50-4117-b1e1-1da29fa16c0b" executionId="446212f8-e270-4e2c-ae62-89bf45fdaee7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="0e81f790-a76d-4961-be7e-c2a0da91bfb1" executionId="7404ac94-f9e7-4865-a77a-5d256922735d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="8d9f0630-8a63-41c4-b574-5408f5fd1af0" executionId="13fe4a66-2fc0-4816-8a48-81801a2e733e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="6f916d7d-7545-4858-8b32-072433b5c9ef" executionId="30d4835b-b50e-47d7-81d8-0b526bde562e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="031aff43-1f11-4229-8b88-674444278d29" executionId="71710429-fd93-4cd1-9802-2763b080c79c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="393058fc-e08c-49e9-ba91-d645accb0361" executionId="9057561c-280f-4226-8d43-a81fbc700f1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="23023164-215b-441f-b4cc-72267521d1ff" executionId="fe45a2b4-c29b-496d-b7d5-e1036feecb18" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="def49c55-d909-44bd-80f2-6e2504b60e33" executionId="933f5cbe-699f-4a88-a1a2-f68d2b3dedb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="14b2bb88-a4d7-45bd-b930-1334113c8cd8" executionId="d1858bf8-74d8-4b3e-8911-d37b24527dda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <TestEntry testId="01f31c8c-6a0a-474b-b9d2-ad2b9350015e" executionId="13d7316e-752c-48d0-8590-06cb3d3c143c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="a1129673-7d81-4926-852d-10f222e926ad" executionId="5a12e4b3-e4f9-4641-b963-77e00e53695b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="2e49daf8-f7c1-42a8-ad24-98c9eb583139" executionId="a7d2ec06-d9dd-465b-80e9-c66d4d8b7cd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="75a12c75-34e1-46af-9b71-f79b19d586d8" executionId="333a3a1f-c9c2-4f70-973e-d79de0e9edaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="1a979689-0897-4ff8-b871-979a19e2bdb5" executionId="dd06eebc-fb1b-4953-8e97-119dbeb9a0f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="3ab2f6a6-8533-4c8a-ba21-727fea3c987e" executionId="6bb608db-0318-43b1-947c-1d15f8ff6668" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="7df6af87-18b2-4ae5-9859-b53ef7057dc2" executionId="f942160a-fd27-4b60-a609-22f72643b171" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="9fd2a405-bab6-4f1c-a030-484021bc4eaa" executionId="152a203a-a726-4355-ac3e-758e0d1d327c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="5e97c693-95dc-41ac-8fc6-60bf818dfa66" executionId="4f984a4a-789f-4f20-a60f-984f6e56353c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="29512be7-0c52-4dbd-85ff-aca64918cd1a" executionId="0269c15b-9ede-4f76-944e-9822971ade72" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="c264a633-d90f-43ec-8471-279cfe9cd9ad" executionId="a19e0772-75e6-4d40-9dce-c41f28f36a9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="f3dc26aa-d563-45ac-830a-94f0490d4a98" executionId="dab4edb8-72cf-48e9-ad94-f5f5d8861e8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="4b205a93-9871-4daf-88e7-aadd785a1a76" executionId="32a3b23e-be5a-4671-a04c-bee71306a769" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="4f80f94c-1848-40f9-8ed0-fe66ad55f472" executionId="1259de0f-6646-4559-8b24-1ec956743ba4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="dacc1917-69cd-4b3b-bee7-0c2f151ccdc2" executionId="14b80511-c5d7-4e4e-8ac2-8a238b583b48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="5a83b990-aea0-47b4-9c10-db39edaa8e4b" executionId="af5a0527-2f1f-4bb7-8c42-265fa1b20975" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="c3dc8b70-8a34-4b6b-b4b8-25c9c22c7fcc" executionId="e5d15714-f436-43e0-a8fa-cbbbc1e54549" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="14c08336-0c7b-4cb3-bd25-f2854db3766a" executionId="e7cd3d9a-9e1a-45fd-8852-9a4d014413be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <TestEntry testId="0b5635ec-2fb8-4b51-9037-5a96ade9c58b" executionId="1d0bea5e-aa08-49d6-8751-8ea2939ad489" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
   </TestEntries>
   <Results>
-    <UnitTestResult testId="15ebcad6-b742-4e82-8ed7-b3d9793d3f9c" executionId="d4a255cc-7306-473c-8447-aac49ec98600" testName="testing / render the About Us title" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:18.270Z" endTime="2021-04-03T01:00:18.449Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="e3137004-b682-4e6a-803c-843005b8e85f" executionId="c216c784-aef1-49e4-8256-7d4a10293549" testName="testing / render text in mission" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:18.449Z" endTime="2021-04-03T01:00:18.628Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="8a8c25ec-cf07-459c-87b8-1c3f2dd6fcd1" executionId="438f5f98-37c1-4d12-8e33-4dfa381bf4e4" testName="testing / render the team member section title" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:18.628Z" endTime="2021-04-03T01:00:18.807Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="7144cbf8-ccc6-4ea9-94c5-a49b87c7f9d6" executionId="90fb57f2-1ea6-4ade-9358-6c4dbe30e678" testName="testing / render homepage text" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:18.807Z" endTime="2021-04-03T01:00:18.986Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="840b582a-5daf-4494-a32b-b19eb928b383" executionId="e412ddac-7456-422a-b92e-857763e51d54" testName="testing / render footer text - Home" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:18.986Z" endTime="2021-04-03T01:00:19.165Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="bcc8c49d-4f34-4260-8c8c-3dc9b8358c8e" executionId="1b050d23-62d5-430e-87f0-86edab5ddfcd" testName="testing / render footer text - About Us" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:19.165Z" endTime="2021-04-03T01:00:19.344Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="b8a7fbbf-ab82-474f-990c-d33e2f4489f0" executionId="4cdb07a6-fdcf-484a-b0ea-791e9a9a962c" testName="testing / render footer text - How It Works" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:19.344Z" endTime="2021-04-03T01:00:19.523Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="bee259a4-a256-4e05-8ba3-ec77a570341c" executionId="34598432-2212-43f8-90c8-0577144f282b" testName="testing / render 'Our Story' title" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:19.523Z" endTime="2021-04-03T01:00:19.702Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="d72b9fa4-0e50-4117-b1e1-1da29fa16c0b" executionId="446212f8-e270-4e2c-ae62-89bf45fdaee7" testName="testing / render 'Our Story' text" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:19.702Z" endTime="2021-04-03T01:00:19.881Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="0e81f790-a76d-4961-be7e-c2a0da91bfb1" executionId="7404ac94-f9e7-4865-a77a-5d256922735d" testName="testing / render 'How It Works' title" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:19.881Z" endTime="2021-04-03T01:00:20.060Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="8d9f0630-8a63-41c4-b574-5408f5fd1af0" executionId="13fe4a66-2fc0-4816-8a48-81801a2e733e" testName="testing / render team member - Gopi" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:20.060Z" endTime="2021-04-03T01:00:20.239Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="6f916d7d-7545-4858-8b32-072433b5c9ef" executionId="30d4835b-b50e-47d7-81d8-0b526bde562e" testName="testing / render team member - Phuong" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:20.239Z" endTime="2021-04-03T01:00:20.418Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="031aff43-1f11-4229-8b88-674444278d29" executionId="71710429-fd93-4cd1-9802-2763b080c79c" testName="testing / render team member - Leul" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:20.418Z" endTime="2021-04-03T01:00:20.597Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="393058fc-e08c-49e9-ba91-d645accb0361" executionId="9057561c-280f-4226-8d43-a81fbc700f1c" testName="testing / render team member - Christy" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:20.597Z" endTime="2021-04-03T01:00:20.776Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="23023164-215b-441f-b4cc-72267521d1ff" executionId="fe45a2b4-c29b-496d-b7d5-e1036feecb18" testName="testing / render Christy Description" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:20.776Z" endTime="2021-04-03T01:00:20.955Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="def49c55-d909-44bd-80f2-6e2504b60e33" executionId="933f5cbe-699f-4a88-a1a2-f68d2b3dedb3" testName="testing / render Line2 of home" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:20.955Z" endTime="2021-04-03T01:00:21.134Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="14b2bb88-a4d7-45bd-b930-1334113c8cd8" executionId="d1858bf8-74d8-4b3e-8911-d37b24527dda" testName="testing / render Leul Description" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:21.134Z" endTime="2021-04-03T01:00:21.313Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
-    <UnitTestResult testId="01f31c8c-6a0a-474b-b9d2-ad2b9350015e" executionId="13d7316e-752c-48d0-8590-06cb3d3c143c" testName="testing / render Gopi Description" computerName="DESKTOP-I7T5DU9" duration="00:00:00.179" startTime="2021-04-03T01:00:21.313Z" endTime="2021-04-03T01:00:21.492Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="a1129673-7d81-4926-852d-10f222e926ad" executionId="5a12e4b3-e4f9-4641-b963-77e00e53695b" testName="testing / render the About Us title" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:38:55.907Z" endTime="2021-04-03T01:38:57.562Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="2e49daf8-f7c1-42a8-ad24-98c9eb583139" executionId="a7d2ec06-d9dd-465b-80e9-c66d4d8b7cd4" testName="testing / render text in mission" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:38:57.562Z" endTime="2021-04-03T01:38:59.217Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="75a12c75-34e1-46af-9b71-f79b19d586d8" executionId="333a3a1f-c9c2-4f70-973e-d79de0e9edaa" testName="testing / render the team member section title" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:38:59.217Z" endTime="2021-04-03T01:39:00.872Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="1a979689-0897-4ff8-b871-979a19e2bdb5" executionId="dd06eebc-fb1b-4953-8e97-119dbeb9a0f9" testName="testing / render homepage text" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:00.872Z" endTime="2021-04-03T01:39:02.527Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="3ab2f6a6-8533-4c8a-ba21-727fea3c987e" executionId="6bb608db-0318-43b1-947c-1d15f8ff6668" testName="testing / render footer text - Home" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:02.527Z" endTime="2021-04-03T01:39:04.182Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="7df6af87-18b2-4ae5-9859-b53ef7057dc2" executionId="f942160a-fd27-4b60-a609-22f72643b171" testName="testing / render footer text - About Us" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:04.182Z" endTime="2021-04-03T01:39:05.837Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="9fd2a405-bab6-4f1c-a030-484021bc4eaa" executionId="152a203a-a726-4355-ac3e-758e0d1d327c" testName="testing / render footer text - How It Works" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:05.837Z" endTime="2021-04-03T01:39:07.492Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="5e97c693-95dc-41ac-8fc6-60bf818dfa66" executionId="4f984a4a-789f-4f20-a60f-984f6e56353c" testName="testing / render 'Our Story' title" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:07.492Z" endTime="2021-04-03T01:39:09.147Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="29512be7-0c52-4dbd-85ff-aca64918cd1a" executionId="0269c15b-9ede-4f76-944e-9822971ade72" testName="testing / render 'Our Story' text" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:09.147Z" endTime="2021-04-03T01:39:10.802Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="c264a633-d90f-43ec-8471-279cfe9cd9ad" executionId="a19e0772-75e6-4d40-9dce-c41f28f36a9e" testName="testing / render 'How It Works' title" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:10.802Z" endTime="2021-04-03T01:39:12.457Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="f3dc26aa-d563-45ac-830a-94f0490d4a98" executionId="dab4edb8-72cf-48e9-ad94-f5f5d8861e8d" testName="testing / render team member - Gopi" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:12.457Z" endTime="2021-04-03T01:39:14.112Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="4b205a93-9871-4daf-88e7-aadd785a1a76" executionId="32a3b23e-be5a-4671-a04c-bee71306a769" testName="testing / render team member - Phuong" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:14.112Z" endTime="2021-04-03T01:39:15.767Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="4f80f94c-1848-40f9-8ed0-fe66ad55f472" executionId="1259de0f-6646-4559-8b24-1ec956743ba4" testName="testing / render team member - Leul" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:15.767Z" endTime="2021-04-03T01:39:17.422Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="dacc1917-69cd-4b3b-bee7-0c2f151ccdc2" executionId="14b80511-c5d7-4e4e-8ac2-8a238b583b48" testName="testing / render team member - Christy" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:17.422Z" endTime="2021-04-03T01:39:19.077Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="5a83b990-aea0-47b4-9c10-db39edaa8e4b" executionId="af5a0527-2f1f-4bb7-8c42-265fa1b20975" testName="testing / render Christy Description" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:19.077Z" endTime="2021-04-03T01:39:20.732Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+Expected substring: [32m"Tek"[39m
+Received string:    [31m"Team Leader"[39m
+    at Object.&lt;anonymous&gt; (C:\Users\gopi\my-app\src\App.test.js:112:50)
+    at Object.asyncJestTest (C:\Users\gopi\my-app\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:106:37)
+    at C:\Users\gopi\my-app\node_modules\jest-jasmine2\build\queueRunner.js:45:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\gopi\my-app\node_modules\jest-jasmine2\build\queueRunner.js:28:19)
+    at C:\Users\gopi\my-app\node_modules\jest-jasmine2\build\queueRunner.js:75:41
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult testId="c3dc8b70-8a34-4b6b-b4b8-25c9c22c7fcc" executionId="e5d15714-f436-43e0-a8fa-cbbbc1e54549" testName="testing / render Line2 of home" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:20.732Z" endTime="2021-04-03T01:39:22.387Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="14c08336-0c7b-4cb3-bd25-f2854db3766a" executionId="e7cd3d9a-9e1a-45fd-8852-9a4d014413be" testName="testing / render Leul Description" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:22.387Z" endTime="2021-04-03T01:39:24.042Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
+    <UnitTestResult testId="0b5635ec-2fb8-4b51-9037-5a96ade9c58b" executionId="1d0bea5e-aa08-49d6-8751-8ea2939ad489" testName="testing / render Gopi Description" computerName="DESKTOP-I7T5DU9" duration="00:00:01.655" startTime="2021-04-03T01:39:24.042Z" endTime="2021-04-03T01:39:25.697Z" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d"/>
   </Results>
 </TestRun>
