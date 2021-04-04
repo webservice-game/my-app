@@ -11,6 +11,7 @@ import { Button } from 'primereact/button';
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/saga-blue/theme.css"
 import "primereact/resources/primereact.css";
+import placeholderImageLogo from "./Images/G.png";
 // import "primeflex/primeflex.css";
 
 import {
@@ -225,11 +226,15 @@ console.log(friend)
            </div> */}
          {/* <Tooltip target=".export-buttons>button" position="bottom" /> */}
      <Container fluid className="get-started-con">
-        <LogoTitle />
-      
-          <div className="game-name-div">
+     <Row>
+            <Col>
+            <div className="game-name-div">
             { friend[0]!=null && <button  value="Change value" onClick={friendsList} className="game-name-button">Friends List</button> }
           </div>
+            <a href="/"><Image src={placeholderImageLogo} className="logo-title" /></a></Col>
+        </Row>
+      
+       
    
         <Row className="get-started-row">
     
