@@ -109,7 +109,7 @@ test("render team member - Christy", () => {
 // Test 18
 test("render Christy Description", () => {
   const wrapper = shallow(<About/>);
-  expect(wrapper.find('.ChristyName h5').text()).toContain("Tek");
+  expect(wrapper.find('.ChristyName h5').text()).toContain("Team Leader");
 });
 // Test 19
 test("render Line2 of home", () => {
