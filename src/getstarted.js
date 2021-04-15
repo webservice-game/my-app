@@ -5,7 +5,7 @@ import Footer from './Footer.js'
 import './getstarted.css'
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, Accordion, Card } from 'react-bootstrap';
 
 import { Button } from 'primereact/button';
 import "primeicons/primeicons.css";
@@ -117,11 +117,35 @@ function Started() {
       
       // console.log(this.state.callofduty)
       }
-       function dateTemplate(rowData, column) {
+       /*function dateTemplate(rowData, column) {
         return <div>
             <a  onClick={(event) => rowColumnClick(rowData)} >{rowData.playerName}</a>
         </div>;
+    }*/
+
+    function dateTemplate(rowData) {
+      return <div>
+          <Accordion>
+            <Card>
+              <Card.Header>
+                <Accordion.Toggle as={Link} variant="link" eventKey="0">
+                  {rowData.playerName}
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey="0">
+                <Card.Body>
+                  <h6>Kills: {rowData.kills}</h6>
+                  <h6>Kill Streak: {rowData.killstreak}</h6>
+                  <h6>Assists: {rowData.assists}</h6>
+                  <h6>Head Shots: {rowData.headshots}</h6>
+                  <h6>Misses: {rowData.misses}</h6>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Card>
+          </Accordion>
+      </div>;
     }
+
     function addButton(rowData){
       // console.log(rowData)
       return <div>
