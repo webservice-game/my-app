@@ -113,7 +113,7 @@ function Home(){
                 </div>
             </div>
             <h3>Forefront</h3>
-<div>
+<div className="benefit3">
     <p>Always have the latest, up-to-date information. GMatch will provide you with the current statistics and information, along with displaying them clearly. By using the latest data, we ensure that you will have the best options available and not have to worry that your results are outdated. </p>
 </div>
             </Col>

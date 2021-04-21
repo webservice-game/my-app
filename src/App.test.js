@@ -37,22 +37,10 @@ test("render the team member section title", () => {
   });
 
 // Test #5
-  test("render footer text - Home", ()=>{
-    const wrapper = shallow(<Footer/>)  
-      expect(wrapper.find('.FooterHome h5').text()).toContain("Home");
-  });
+
 
   // Test 6
-  test("render footer text - About Us", ()=>{
-    const wrapper = shallow(<Footer/>)
-    expect(wrapper.find('.FooterAU h5').text()).toContain("About Us");
-    });
-
-// Test #7
-test("render footer text - How It Works", ()=>{
-  const wrapper = shallow(<Footer/>)
-  expect(wrapper.find('.FooterHIW h5').text()).toContain("How it works");
-    });
+  
 
 /* Test 8
 test("render 'Get Started' button", () => {
@@ -122,11 +110,43 @@ test("render Leul Description", () => {
   expect(wrapper.find('.LeulName h5').text()).toContain("Team Member");
 });
 // Test 21
-test("render Gopi Description", () => {
-  const wrapper = shallow(<About/>);
-  expect(wrapper.find('.GopiName h5').text()).toContain("Team Member");
-});
+
   })
+  describe("data", () =>{
+    test("render Gopi Description", () => {
+      const wrapper = shallow(<About/>);
+      expect(wrapper.find('.GopiName h5').text()).toContain("Team Member");
+    });
+    test('Test get started click event', () => {
+      const mockCallBack = jest.fn();
+    
+      const button = shallow((<getStartedButton onClick ={mockCallBack}>Good</getStartedButton>));
+      button.find('getStartedButton').simulate('click');
+      expect(mockCallBack.mock.calls.length).toEqual(1);
+    });
+    test("render copyright in footer", () => {
+      const wrapper = shallow(<Footer/>);
+      expect(wrapper.find('.copyright Col').text()).toContain("@2021 Web Services Team#");
+    });
+    test("render benefit 3", () => {
+      const wrapper = shallow(<Home/>);
+      expect(wrapper.find('.benefit3 p').text()).toContain("Always have the latest,");
+    });
+      test("render footer text - Home", ()=>{
+    const wrapper = shallow(<Footer/>)  
+      expect(wrapper.find('.FooterHome h5').text()).toContain("Home");
+  });
+  test("render footer text - About Us", ()=>{
+    const wrapper = shallow(<Footer/>)
+    expect(wrapper.find('.FooterAU h5').text()).toContain("About Us");
+    });
+
+// Test #7
+test("render footer text - How It Works", ()=>{
+  const wrapper = shallow(<Footer/>)
+  expect(wrapper.find('.FooterHIW h5').text()).toContain("How it works");
+    });
+  }) 
   // describe('With Enzyme', () => {
   //   it('App shows "About"', () => {
   //     const about = shallow(
