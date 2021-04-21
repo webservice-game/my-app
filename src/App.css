@@ -331,6 +331,8 @@ html, body{
   }
   .body-row-member{
     flex-direction: row;
+    padding-left: 300px;
+    padding-right: 300px;
   }
   .member-info{
     padding-left: 30px;
@@ -341,11 +343,6 @@ html, body{
   }
 
   /******Footer******/
-  .logo-image{
-    padding-top: ;
-    padding-bottom: ;
-  }
-  
   .footer-navigation{
     display: flex;
     flex-direction: row;

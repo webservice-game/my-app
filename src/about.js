@@ -37,7 +37,7 @@ function About(){
                 <Col className="member-info ChristyName">
                     <h3><strong>Christy Neal</strong></h3>
                     <h5>Team Leader</h5>
-                    <p></p>
+                    <p>I’m a bachelor’s degree holder of 2018 in dance mainly focusing on production. But after a while IT related fields started capturing my interest more than I would like to admit. After a while I decided to fully pursue the IT related fields in 2019. Currently I’m a Software engineer masters student in her second semester trying to learn something new every day. I’m working on the G.Match app with my team mates.</p>
                 </Col>
             </Row>
             <Row className="body-row body-row-member">
@@ -53,11 +53,11 @@ function About(){
                  <Col className="member-info LeulName">
                     <h3><strong>Leul Endashaw</strong></h3>
                     <h5>Team Member</h5>
-                    <p></p>
+                    <p>I’m a students at Kennesaw state university doing my masters in software engineering. I did my bachelors degree in computer science, which started me on this journey and encouraged me to pursue it more. I’m currently working in this game matching project which has thought me a lot and gave me a chance to collaborate with my team mates.</p>
                 </Col>
             </Row>
             <Row className="body-row body-row-member">
-                <Col ><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
+                <Col><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
                 <Col className="member-info">
                    <div className='PhuongName'> <h3><strong>Phuong Nguyen</strong></h3></div>
                     <h5>Team Member</h5>
