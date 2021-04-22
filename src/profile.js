@@ -1,6 +1,7 @@
 import React,{Component, useState, useEffect} from "react"
 import { Container, Row, Col, Table } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import { BackButton } from './BackButton'
 import LogoTitle from "./LogoTitle";
 import Footer from './Footer.js'
 import './profile.css'
@@ -61,6 +62,7 @@ console.log(playerData)
                             </tr>
                         </tbody>
                     </Table>
+                    <BackButton />
                 </Col>
             </Row>
             <Footer />

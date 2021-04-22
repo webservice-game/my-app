@@ -5,6 +5,7 @@ import LogoTitle from './LogoTitle';
 import Footer from './Footer.js';
 
 function HowItWorks(){
+    
     return(
         <Container fluid>
             <LogoTitle />
