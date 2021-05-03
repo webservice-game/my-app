@@ -57,7 +57,7 @@ function About(){
                 </Col>
             </Row>
             <Row className="body-row body-row-member">
-                <Col ><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
+                <Col><div><Image src={placeholderImagePN} className="member-img" /></div></Col>
                 <Col className="member-info">
                    <div className='PhuongName'> <h3><strong>Phuong Nguyen</strong></h3></div>
                     <h5>Team Member</h5>

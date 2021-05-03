@@ -19,10 +19,10 @@ function Footer(){
             </Row>
             <Row><div className="footer-line"></div></Row>
             <Row className="social-media">
-                <Col><a><Image src={placeholderImageIS} className="media-img" /></a></Col>
-                <Col><a><Image src={placeholderImageFB} className="media-img" /></a></Col>
+                <Col><a href="http://instagram.com/gmatch_app"><Image src={placeholderImageIS} className="media-img" /></a></Col>
+                <Col><a href="https://www.facebook.com/GMatch-App-101762755389183"><Image src={placeholderImageFB} className="media-img" /></a></Col>
                 <Col><a><Image src={placeholderImageLI} className="media-img"/></a></Col>
-                <Col><a><Image src={placeholderImageTW} className="media-img" /></a></Col>
+                <Col><a href="http://twitter.com/gmatch_app"><Image src={placeholderImageTW} className="media-img" /></a></Col>
             </Row>
             <Row className="copyright">
                 <Col>@2021 Web Services Team#</Col>
