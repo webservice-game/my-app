@@ -8,7 +8,7 @@ function HowItWorks(){
     return(
         <Container fluid>
             <LogoTitle />
-            <Row>
+            <Row style={{marginTop:'10px'}}>
                 <Col className="page-title"><h1>How It Works</h1></Col>
             </Row>
             <Row className="body-row">

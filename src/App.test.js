@@ -7,6 +7,7 @@ import Home from './home';
 import React from 'react';
 import {shallow,configure} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import Start from './getstarted'
 configure({adapter: new Adapter()});
 describe("testing", () =>{
   //  Test #1
@@ -117,13 +118,7 @@ test("render Leul Description", () => {
       const wrapper = shallow(<About/>);
       expect(wrapper.find('.GopiName h5').text()).toContain("Team Member");
     });
-    test('Test get started click event', () => {
-      const mockCallBack = jest.fn();
-    
-      const button = shallow((<getStartedButton onClick ={mockCallBack}>Good</getStartedButton>));
-      button.find('getStartedButton').simulate('click');
-      expect(mockCallBack.mock.calls.length).toEqual(1);
-    });
+ 
     test("render copyright in footer", () => {
       const wrapper = shallow(<Footer/>);
       expect(wrapper.find('.copyright Col').text()).toContain("@2021 Web Services Team#");
@@ -147,6 +142,75 @@ test("render footer text - How It Works", ()=>{
   expect(wrapper.find('.FooterHIW h5').text()).toContain("How it works");
     });
   }) 
+  describe("Api testing", () =>{
+    test('Test get started click event', () => {
+      const mockCallBack = jest.fn();
+    
+      const button = shallow((<getStartedButton onClick ={mockCallBack}>Good</getStartedButton>));
+      button.find('getStartedButton').simulate('click');
+      expect(mockCallBack.mock.calls.length).toEqual(1);
+    });
+    // Test 27
+    test('Test show more click event', () => {
+      const mockCallBack = jest.fn();
+      const button = shallow((<show-more-button onClick ={mockCallBack}>Good</show-more-button>));
+      button.find('show-more-button').simulate('click');
+      expect(mockCallBack.mock.calls.length).toEqual(1);
+    });
+    // Test 28
+    test('Test game name click event', () => {
+      const mockCallBack = jest.fn();
+      const button = shallow((<game-name-button onClick ={mockCallBack}>Good</game-name-button>));
+      button.find('game-name-button').simulate('click');
+      expect(mockCallBack.mock.calls.length).toEqual(1);
+    });
+    // Test 29
+    test("render 'Show More' button text", () => {
+       const wrapper = shallow(<div><button className='btn show-more-button'>OK</button></div>);
+     const button = wrapper.find('.show-more-button'); 
+     expect(button.text()).toEqual('OK');
+      });
+    // Test 30
+    test("render Game button text", () => {
+    
+       const wrapper = shallow(<div><button className='btn game-name-button'>OK</button></div>);
+     const button = wrapper.find('.game-name-button'); 
+     expect(button.text()).toEqual('OK');
+      });
+      test('Header first', () => {
+        const wrapper = shallow(<Start/>)
+      
+     
+        expect(wrapper.find('.Name').prop('header')).toEqual('Name');
+       
+      
+   
+      });
+      test('Header second', () => {
+        const wrapper = shallow(<Start/>)
+     expect(wrapper.find('.Rank').prop('header')).toEqual('Rank');
+       });
+       test('Header third', () => {
+        const wrapper = shallow(<Start/>)
+     expect(wrapper.find('.level').prop('header')).toEqual('Level');
+       });
+       test('Header fourth', () => {
+        const wrapper = shallow(<Start/>)
+     expect(wrapper.find('.timePlayed').prop('header')).toEqual('Time-Played');
+       });
+       test('Header fifth', () => {
+        const wrapper = shallow(<Start/>)
+     expect(wrapper.find('.Wins').prop('header')).toEqual('Wins');
+       });
+       test('Header sixth', () => {
+        const wrapper = shallow(<Start/>)
+     expect(wrapper.find('.action').prop('header')).toEqual('Actions');
+       });
+      test("show more", () => {
+        const wrapper = shallow(<Start />);
+        expect(wrapper.find('.show-more-button').text()).toContain("Show More");
+      });
+    });
   // describe('With Enzyme', () => {
   //   it('App shows "About"', () => {
   //     const about = shallow(

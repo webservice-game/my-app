@@ -243,14 +243,13 @@ console.log(friend)
             {/* {!this.state.started &&  */}
             <DataTable value={call} header={!friendnotclicked?header:''}>
             
-            <Column field="playerName" header="Name" body={dateTemplate} filter filterPlaceholder="Search by name" className="column-name styho"></Column>
-                <Column field="rank" header="Rank"  filter filterPlaceholder="Search by rank" className="column-rank styho"></Column>
+            <Column field="playerName" header="Name" body={dateTemplate} filter filterPlaceholder="Search by name" className="column-name styho Name"></Column>
+                <Column field="rank" header="Rank"  filter filterPlaceholder="Search by rank" className="column-rank styho Rank"></Column>
                 
-                <Column field="level" header="Level" filter filterPlaceholder="Search by level" className="column-level styho"></Column>
-                <Column field="timeplayed" header="Time-Played" filter filterPlaceholder="Search by time" className="column-timeplay styho"></Column>
-                <Column field="wins" header="Wins" filter filterPlaceholder="Search by wins" className="column-wins styho"></Column>
-                <Column field="name" header="Actions" body={addButton} className="column-actions"></Column>
-                
+                <Column field="level" header="Level" filter filterPlaceholder="Search by level" className="column-level styho level"></Column>
+                <Column field="timeplayed" header="Time-Played" filter filterPlaceholder="Search by time" className="column-timeplay styho timePlayed"></Column>
+                <Column field="wins" header="Wins" filter filterPlaceholder="Search by wins" className="column-wins styho Wins"></Column>
+                <Column field="name" header="Actions" body={addButton} className="column-actions action"></Column>
                 {/* <Column field="quantity" header="Quantity"></Column> */}
             </DataTable>
             {friendnotclicked && <div style={{marginTop:"10px"}}><button  className="show-more-button" onClick={showmoredata}>Show More</button></div>}
